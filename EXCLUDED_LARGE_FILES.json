@@ -1,5 +1,5 @@
 {
-  "reason": "Checkpoints, optimizer states, raw/tokenized corpora and other large binaries remain in the complete local archive; intentionally omitted from GitHub.",
+  "reason": "Large binaries remain in the complete local archive; intentionally omitted from GitHub.",
   "local_complete_archive": "/home/ubuntu/rope_change",
   "files": [
     {

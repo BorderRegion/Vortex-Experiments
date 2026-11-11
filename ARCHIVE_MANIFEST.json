@@ -1,18 +1,18 @@
 {
-  "created_utc": "2026-11-11T10:02:13.282854+00:00",
+  "created_utc": "2026-11-11T10:28:25.026714+00:00",
   "source_directory": "/home/ubuntu/rope_change",
-  "included_source_files": 722,
+  "included_source_files": 725,
   "max_file_bytes": 5242880,
-  "file_count": 725,
-  "total_bytes": 17731708,
+  "file_count": 728,
+  "total_bytes": 17751445,
   "files": {
     ".gitignore": {
       "bytes": 147,
       "sha256": "cc38548dd60da5746c196dfc78ba4cd64c08768c7e320eea59ff29855e13f906"
     },
     "EXCLUDED_LARGE_FILES.json": {
-      "bytes": 8455,
-      "sha256": "5454deede7874c7835f771cfa5404006888d9796963c65112da688754245a9dd"
+      "bytes": 8392,
+      "sha256": "1c5dbfce5e8098c9cc501048e9ca0891050a3ae29ce10e79cdb8fc773c8e2a8b"
     },
     "README.md": {
       "bytes": 5788,
@@ -1330,6 +1330,10 @@
       "bytes": 1582,
       "sha256": "37e54181ce3dffa59c71e3581be0c97246279c5b492e286d5853b5cdbde3f31c"
     },
+    "vortex_text/configs/HADAMARD_HOLDOUT_PLAN.json": {
+      "bytes": 6631,
+      "sha256": "38bc5ea1ef440e07a7bcd6e946ccdde467f81acbd4ef85a6de99da5e005169bd"
+    },
     "vortex_text/configs/PLAN.json": {
       "bytes": 1896,
       "sha256": "1fa222fff7c4ca7da6277a6eb4deae061b663d14e22bbd156b77639c96c79f88"
@@ -1494,6 +1498,10 @@
       "bytes": 5672,
       "sha256": "affc40a7ab3727feb6abf34b2828635458ee2f158a655293c25bd5d4e025ff1e"
     },
+    "vortex_text/experiments/hadamard_holdout.py": {
+      "bytes": 9842,
+      "sha256": "b0752ebfc4f365d00d8f32e549d36de75eba756262f8a50b78b6c78048cc320c"
+    },
     "vortex_text/experiments/mirror.py": {
       "bytes": 2550,
       "sha256": "118b93f4ddc9a3c5ab40f06214c51e7a1fb434e92cfbe9fc30618f942474bdb9"
@@ -1501,6 +1509,10 @@
     "vortex_text/experiments/prepare_data.py": {
       "bytes": 5000,
       "sha256": "02b7ca40a6c245762d91f8e4333764d4de280a56934cc3623a3eae9b73155c3c"
+    },
+    "vortex_text/experiments/prepare_official_test.py": {
+      "bytes": 3327,
+      "sha256": "d1df4ec377384ce4f10c49a269b0608c4bf78768110b156905fc33499d63aaa8"
     },
     "vortex_text/experiments/report.py": {
       "bytes": 14478,

@@ -1,0 +1,128 @@
+{
+  "created_utc": "2026-11-11T10:27:50.774400+00:00",
+  "purpose": "Fixed post-RoPE Hadamard control and one-shot untouched official-test check, requested after two-seed validation findings.",
+  "status_at_freeze": {
+    "official_test_downloaded": false,
+    "official_test_metrics_seen": false,
+    "hadamard_validation_metrics_seen": false,
+    "training_finished": true
+  },
+  "seeds": [
+    2026,
+    2027
+  ],
+  "methods": [
+    "rope_safe",
+    "rope_hadamard",
+    "spectral_rope",
+    "vortex"
+  ],
+  "checkpoints": "Existing final step61036, 500006912 tokens each; no training or weight update.",
+  "checkpoint_sha256": {
+    "train_rope_safe_s2026_step61036.pt": "b71fb6caf14dd71e2353dd2635a46417235bd645e7a8674edd5efa25f3e0750e",
+    "train_vortex_s2026_step61036.pt": "4c5cc64b02b8f66b7c39c22a0182bdc855121e114ad69f149b422a850a89729f",
+    "train_rope_safe_s2027_step61036.pt": "e12c5c0bd889df66720ccd7e8cbe61b133a0994a46f95771d810c7a09844ae8a",
+    "train_vortex_s2027_step61036.pt": "131b3eca1e5c99197b7289f350c7eb18f3e75cfae65a722af29fbcd63d612341"
+  },
+  "method_sources": {
+    "rope_safe": "same-seed RoPE",
+    "rope_hadamard": "same-seed RoPE plus fixed post-position transform",
+    "spectral_rope": "same-seed Vortex Q/K weights transformed by original spectral.convert_checkpoint",
+    "vortex": "same-seed Vortex"
+  },
+  "hadamard": {
+    "dimension": 128,
+    "definition": "H[i,j]=(-1)^popcount(i & j)/sqrt(128); natural Sylvester order, no sign randomization or fitting",
+    "placement": "On each head Q and K after their RoPE position transform and before quantization; same H across Q/K, heads, layers, tokens and seeds. V unchanged.",
+    "arithmetic": "Seven FP32 butterfly add/sub stages then multiply by 1/sqrt(128) and cast to input dtype; no autocast matmul.",
+    "matrix_float64_le_sha256": "2d011e8ab2848a8ab75ec5d20861e933322167c3ab1bb29e3acba995f2d24428"
+  },
+  "conditions": [
+    "bf16",
+    "qk_int4_head"
+  ],
+  "primary_metric": {
+    "split": "test",
+    "context": 512,
+    "condition": "qk_int4_head",
+    "statistic": "final token-weighted NLL"
+  },
+  "bf16_reporting": "Corresponding full-split BF16 NLL for every seed/method, with separately reported quantization increment.",
+  "quantization": {
+    "kind": "symmetric INT4 fake quant",
+    "codes": [
+      -7,
+      7
+    ],
+    "scale": "Per-token per-head max(abs(x))/7, FP32, one scale per 128 values; clamp_min(1e-12) before /7.",
+    "implementation": "Unchanged src.quant.quantize through src.ring_quant, same post-position configuration for all four methods.",
+    "rounding": "torch.round then clamp, dequantize and cast back; attention BF16/FP32, no native INT4 claim"
+  },
+  "evaluation": {
+    "context": 512,
+    "batch_size": 16,
+    "precision": "BF16 autocast; FP32 model weights; FP32 cross-entropy; FP64 aggregation",
+    "coverage": "All next-token targets; contiguous original order, nonoverlapping causal rows, final short row retained; no sliding window or split mixing.",
+    "no_selection": "Exactly two existing seeds and four fixed methods, both conditions; no test-time tuning, extra transforms, chosen checkpoints or seed selection."
+  },
+  "correctness": {
+    "validation_offsets": [
+      0,
+      8192,
+      65536
+    ],
+    "batch_size": 1,
+    "context": 512,
+    "fp32_max_abs_logit_difference": 0.002,
+    "fp32_relative_l2": 1e-05,
+    "gate": "All six FP32 whole-model cases must pass before INT4 evaluation; independent dense-reference butterfly error <2e-6 and matrix orthogonality error <1e-12.",
+    "bf16": "Record whole-model drift on the same six cases plus full BF16 NLL; bitwise equality not required."
+  },
+  "official_test": {
+    "dataset": "Salesforce/wikitext",
+    "configuration": "wikitext-103-raw-v1",
+    "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "raw_filename": "test-00000-of-00001.parquet",
+    "raw_sha256": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91",
+    "metadata_source": "Pinned-revision Hugging Face file metadata, checked before test download; no test text or metrics read.",
+    "tokenizer": "Reuse unchanged train-only fitted tokenizer; no test fitting.",
+    "packing": "Identical to original train/validation: preserve rows/newlines, EOS before top-level article heading and split end."
+  },
+  "tokenizer_sha256": "c0b3a9deba02271c8194b693ec439bb743ad7c6f91d14ec5810f0fe8c1906bdb",
+  "analysis": {
+    "report": "Every seed/method value; equal-seed mean NLL, BF16 NLL and INT4 increment; PPL only as exp(NLL).",
+    "descriptive_comparisons": [
+      "rope_hadamard vs rope_safe",
+      "vortex vs rope_safe",
+      "vortex vs rope_hadamard",
+      "vortex vs spectral_rope"
+    ],
+    "uncertainty": "Optional paired 8192-token contiguous-block bootstrap, 10000 draws, seed 20261111; text sampling only, never training-seed inference.",
+    "catch_up": "Describe per-seed and mean final NLL differences between fixed Hadamard and Vortex; no post-hoc equivalence margin or universal claim."
+  },
+  "sequence": [
+    "Freeze plan and evaluation source, commit and push publicly before any test evaluation",
+    "FP32/BF16 Hadamard logit check",
+    "Full validation four-method paired evaluation",
+    "Prepare untouched official test",
+    "One-shot full test, all 16 seed/method/precision cells",
+    "Local backup and checksums",
+    "Report all values and push results"
+  ],
+  "frozen_source_sha256": {
+    "experiments/evaluate.py": "affc40a7ab3727feb6abf34b2828635458ee2f158a655293c25bd5d4e025ff1e",
+    "experiments/hadamard_holdout.py": "b0752ebfc4f365d00d8f32e549d36de75eba756262f8a50b78b6c78048cc320c",
+    "experiments/prepare_official_test.py": "d1df4ec377384ce4f10c49a269b0608c4bf78768110b156905fc33499d63aaa8",
+    "experiments/text.py": "418731bb38041266e6378e91eb45ba4e1243dc6fd6dd83b3eef69fd8930b11ef",
+    "src/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/common.py": "12f3564f7c71566beb4db284a5ee8c03b6e4d31f883da39196e39468227d60e9",
+    "src/model.py": "22e278afce233ab2e845da52fa78535df60eed730b9efbc35e42ed21c35cf4bc",
+    "src/quant.py": "9f28c548757873a1ecdaf809cc0b9395a4e42970c164505931df2a4d8eb39420",
+    "src/ring_quant.py": "b2a482e62bc0564850a0cec8d2f7d1c64d2b567744f1ce5f6e2209eed905f683",
+    "src/spectral.py": "ddc78b7d43af3bcd6f23b151ca243d93d9ba2eeb10fcd13e7588e0d05c98a419",
+    "src/synthetic.py": "b92e968c9b5b74f5430b01234021ff39883a33816e5e53c5b97ebd79ad41caaa",
+    "src/vortex.py": "94917dbf3fbede37256e0217c245c44f01b6d549557fc4ff196fc2bb9041b61d"
+  },
+  "wall_deadline_unix": 1794406138,
+  "gpu_budget_hours_cap": 36
+}
