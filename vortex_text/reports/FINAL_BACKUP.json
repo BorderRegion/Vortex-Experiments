@@ -1,11 +1,11 @@
 {
-  "started_unix": 1794390357.0015955,
-  "completed_unix": 1794390374.089265,
+  "started_unix": 1794393186.1703558,
+  "completed_unix": 1794393202.9702935,
   "local_directory": "/home/ubuntu/rope_change/vortex_text",
   "remote_directory": "/root/autodl-tmp/vortex_text/",
   "immutable_only": false,
-  "files": 401,
-  "bytes": 8073565590,
+  "files": 428,
+  "bytes": 8076831624,
   "mismatches": [],
   "passed": true
 }

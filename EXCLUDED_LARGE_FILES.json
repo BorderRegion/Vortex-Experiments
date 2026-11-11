@@ -163,6 +163,10 @@
       "bytes": 76639017
     },
     {
+      "path": "vortex_text/data/raw/test-00000-of-00001.parquet",
+      "bytes": 732610
+    },
+    {
       "path": "vortex_text/data/raw/train-00000-of-00002.parquet",
       "bytes": 156987808
     },
@@ -173,6 +177,10 @@
     {
       "path": "vortex_text/data/raw/validation-00000-of-00001.parquet",
       "bytes": 657209
+    },
+    {
+      "path": "vortex_text/data/test.bin",
+      "bytes": 583418
     },
     {
       "path": "vortex_text/data/train.bin",
@@ -271,5 +279,5 @@
       "bytes": 360940549
     }
   ],
-  "total_bytes": 9981531686
+  "total_bytes": 9982847714
 }

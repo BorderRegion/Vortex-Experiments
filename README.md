@@ -2,24 +2,30 @@
 
 研究带符号置换位置编码在 Q/K 低比特量化下的表现，与标准 RoPE 和从 Vortex 权重离线换基得到的等谱对照比较。归档日期：2026-11-11。完整结果与历史失败记录均保留。
 
-## 当前结论
+## 最新结论：加入固定 Hadamard 与官方 test（2026-11-11）
 
-**Q/K INT4 按 head 量化后的质量收益在两个训练种子上复现；BF16 和 group16 的最终质量仍落后于标准 RoPE。** 这支持继续研究按 head 量化的具体场景，尚不足以证明通用低比特优势。
+**固定归一化 Hadamard 已在验证集和官方 test 的两个种子上都超过 Vortex。Vortex 相对裸 RoPE 的收益在 test 复现，但当前证据不足以证明其优于 RoPE 加现成正交变换的基线。**
 
-下表为 context 512 的完整验证集 NLL，越低越好：
+在读取任何新增指标、下载官方 test 之前，方案与评测代码已公开冻结于 [bd5438b](https://github.com/BorderRegion/Vortex-Experiments/commit/bd5438b1142f7896602af66aae08741fc013d043)。复用两个种子的最终 checkpoint，不额外训练。唯一主指标为官方 test、context 512、Q/K per-head INT4 的最终 NLL；同时报告每个方法对应的 BF16 NLL。
 
-|种子|方法|BF16|Q/K INT4 per-head|Q/K INT4 group16|
-|---|---|---:|---:|---:|
-|2026|RoPE|3.369918|3.401877|3.381071|
-|2026|Vortex|3.384464|3.394042|3.391016|
-|2026|等谱对照|3.384503|3.396692|3.391948|
-|2027|RoPE|3.363926|3.390547|3.373665|
-|2027|Vortex|3.371297|3.381170|3.376613|
-|2027|等谱对照|3.371306|3.383828|3.377652|
+官方 test 全部 291,708 个 next-token 目标，NLL 越低越好：
 
-per-head 下 Vortex 的量化后绝对 NLL 在 2/2 个种子优于 RoPE，平均差约 -0.008606，PPL 改善约 0.86%。相对各自 BF16 基线的量化损失增量分别减少约 70% 和 63%。等谱对照本身也比标准 RoPE 稳健，因此不能把这些收益全部归因于离散置换。
+|方法|2026 BF16|2026 INT4（主指标）|2027 BF16|2027 INT4（主指标）|
+|---|---:|---:|---:|---:|
+|标准 RoPE|3.370430|3.402950|3.366874|3.391208|
+|RoPE + 固定 Hadamard|3.370456|**3.378218**|3.366897|**3.374716**|
+|等谱旋转|3.379525|3.391758|3.373906|3.386378|
+|Vortex|3.379554|3.388059|3.373906|3.384364|
 
-全部 INT4 均为对称 [-7,7] 模拟量化，没有原生 4-bit 速度结论。两个种子不足以精确估计训练方差；报告中的文本块 bootstrap 只反映验证文本采样。per-head、group16、ring7 的尺度预算分别为每 128 维 1、8、7 个 FP32 尺度，每种格式在各方法之间一致。
+按两个种子的平均 NLL 换算，test 上 RoPE+Hadamard 相对裸 RoPE 的 PPL 改善约 **2.04%**，Vortex 约 **1.08%**；Hadamard 相对 Vortex 约改善 **0.97%**。验证集上 Hadamard 相对 Vortex 约改善 **1.28%**，已追平此前约 0.86% 的收益。
+
+Hadamard 固定为自然序 Sylvester `H128/sqrt(128)`，放在位置编码后，对 Q/K 使用完全相同的变换，再调用原量化器。FP32 整模型最大 logit 差约 `4.20e-5`，验证等价性通过；BF16 NLL 漂移约数万分之一。没有随机符号、搜索或额外校准。新增完整审计 **114/114** 通过，本机全量备份 SHA256 核对一致。
+
+完整内容见 [新增实验报告](vortex_text/reports/hadamard_holdout/REPORT.md)、[全部 32 项结果 CSV](vortex_text/reports/hadamard_holdout/RESULTS.csv)、[配对比较](vortex_text/reports/hadamard_holdout/COMPARISONS.json)、[预先冻结的计划](vortex_text/configs/HADAMARD_HOLDOUT_PLAN.json)。报告中的文本块区间只衡量文本采样，不替代训练种子方差；两个种子不足以精确估计后者。全部 INT4 仍为模拟量化，没有原生 4-bit 速度结论。
+
+## 先前两种子验证结果（未加入 Hadamard）
+
+下列原始报告保留加入 Hadamard 之前的结果和当时解释。此前 Vortex 在两个种子的 per-head INT4 上都优于裸 RoPE，平均 PPL 改善约 0.86%；BF16 和 group16 的最终质量仍落后。新增对照改变了方法相对竞争基线的判断，不改写先前实验数据。
 
 ## 报告与数据入口
 
@@ -63,11 +69,13 @@ AdamW lr=5e-4，warmup=200，余弦降至 5e-5，betas=(0.9,0.95)，矩阵 weigh
 sha256sum -c SHA256SUMS
 ```
 
-无需模型权重即可重新生成两种子汇总（需要 Python 和 NumPy，无需 GPU）：
+无需模型权重即可重新生成原始两种子汇总（需要 Python 和 NumPy，无需 GPU）：
 
 ```bash
 cd vortex_text
 python -m experiments.summarize_seeds
 ```
+
+新增 `experiments.report_holdout` 也从既有评测 JSON 重建报告，不再次运行 test；其中完整审计会核对 `data/test.bin`，因此需要在完整本地归档中执行，或先恢复清单所列的该二进制流。GitHub 上已提供生成好的报告、CSV 和审计结果。
 
 历史训练代码按执行时内容保存。`configs/frozen_seed2026/` 与 `configs/frozen_seed2027/` 分别记录种子对应源码。平台依赖见各阶段环境 JSON、`vortex_preexp/requirements.txt` 与数据 manifest；不要直接在已有结果目录重新训练。脚本含当次租机的绝对路径、截止日期和备份调度，重新训练需在干净副本中调整为新的环境和截止日期，重新准备语料并重新计算权重；本仓库不提供权重恢复。原始 tokenizer 可用于核对分词器版本。

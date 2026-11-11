@@ -1,0 +1,30 @@
+{
+  "dataset": "Salesforce/wikitext",
+  "configuration": "wikitext-103-raw-v1",
+  "split": "test",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "raw_filename": "test-00000-of-00001.parquet",
+  "raw_sha256": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91",
+  "tokenizer_sha256": "c0b3a9deba02271c8194b693ec439bb743ad7c6f91d14ec5810f0fe8c1906bdb",
+  "tokenizer_fit_split": "train; unchanged",
+  "packing": "Identical to original train/validation: row order/text retained; EOS before top-level article heading and at split end.",
+  "token_stream": {
+    "tokens": 291709,
+    "next_token_targets": 291708,
+    "dtype": "<u2",
+    "sha256": "c353d584fd76416fb60084b86dba01670f946b7330823e40a25347a831ea16ab"
+  },
+  "articles": 62,
+  "nonempty_rows": 2891,
+  "plan_sha256": "38bc5ea1ef440e07a7bcd6e946ccdde467f81acbd4ef85a6de99da5e005169bd",
+  "preregistration": {
+    "github_commit": "bd5438b1142f7896602af66aae08741fc013d043",
+    "public_commit_verified": true,
+    "github_commit_url": "https://github.com/BorderRegion/Vortex-Experiments/commit/bd5438b1142f7896602af66aae08741fc013d043",
+    "plan_sha256": "38bc5ea1ef440e07a7bcd6e946ccdde467f81acbd4ef85a6de99da5e005169bd",
+    "verified_utc": "2026-11-11T10:28:40.627457+00:00",
+    "official_test_results_seen": false
+  },
+  "prepared_unix": 1794393114.3087943,
+  "preparation_wall_seconds": 1.550246000289917
+}

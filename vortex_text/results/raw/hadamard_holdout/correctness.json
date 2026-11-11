@@ -1,0 +1,138 @@
+{
+  "plan_sha256": "38bc5ea1ef440e07a7bcd6e946ccdde467f81acbd4ef85a6de99da5e005169bd",
+  "preregistration": {
+    "github_commit": "bd5438b1142f7896602af66aae08741fc013d043",
+    "public_commit_verified": true,
+    "github_commit_url": "https://github.com/BorderRegion/Vortex-Experiments/commit/bd5438b1142f7896602af66aae08741fc013d043",
+    "plan_sha256": "38bc5ea1ef440e07a7bcd6e946ccdde467f81acbd4ef85a6de99da5e005169bd",
+    "verified_utc": "2026-11-11T10:28:40.627457+00:00",
+    "official_test_results_seen": false
+  },
+  "orthogonality_max_abs_error": 1.1102230246251565e-16,
+  "butterfly_vs_dense_max_abs_error": 4.586713999721326e-07,
+  "cases": [
+    {
+      "seed": 2026,
+      "precision": "fp32",
+      "offset": 0,
+      "max_abs_logit_difference": 3.62396240234375e-05,
+      "mean_abs_logit_difference": 3.376379027031362e-06,
+      "relative_l2": 9.390397508468595e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "seed": 2026,
+      "precision": "fp32",
+      "offset": 8192,
+      "max_abs_logit_difference": 3.910064697265625e-05,
+      "mean_abs_logit_difference": 3.475915491435444e-06,
+      "relative_l2": 7.110892852324469e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "seed": 2026,
+      "precision": "fp32",
+      "offset": 65536,
+      "max_abs_logit_difference": 4.1961669921875e-05,
+      "mean_abs_logit_difference": 3.6016804187966045e-06,
+      "relative_l2": 6.580030458280817e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "seed": 2026,
+      "precision": "bf16",
+      "offset": 0,
+      "max_abs_logit_difference": 0.15625,
+      "mean_abs_logit_difference": 0.01968507654964924,
+      "relative_l2": 0.0059503172524273396,
+      "argmax_agreement": 0.9921875
+    },
+    {
+      "seed": 2026,
+      "precision": "bf16",
+      "offset": 8192,
+      "max_abs_logit_difference": 0.1484375,
+      "mean_abs_logit_difference": 0.02254345826804638,
+      "relative_l2": 0.005139966960996389,
+      "argmax_agreement": 0.990234375
+    },
+    {
+      "seed": 2026,
+      "precision": "bf16",
+      "offset": 65536,
+      "max_abs_logit_difference": 0.1875,
+      "mean_abs_logit_difference": 0.02337355725467205,
+      "relative_l2": 0.004824894014745951,
+      "argmax_agreement": 0.99609375
+    },
+    {
+      "seed": 2027,
+      "precision": "fp32",
+      "offset": 0,
+      "max_abs_logit_difference": 3.1113624572753906e-05,
+      "mean_abs_logit_difference": 3.236557859054301e-06,
+      "relative_l2": 8.359181720152264e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "seed": 2027,
+      "precision": "fp32",
+      "offset": 8192,
+      "max_abs_logit_difference": 3.8623809814453125e-05,
+      "mean_abs_logit_difference": 3.4228710319439415e-06,
+      "relative_l2": 6.089289854571689e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "seed": 2027,
+      "precision": "fp32",
+      "offset": 65536,
+      "max_abs_logit_difference": 4.00543212890625e-05,
+      "mean_abs_logit_difference": 3.4146996767958626e-06,
+      "relative_l2": 5.782480343441421e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "seed": 2027,
+      "precision": "bf16",
+      "offset": 0,
+      "max_abs_logit_difference": 0.1875,
+      "mean_abs_logit_difference": 0.022129574790596962,
+      "relative_l2": 0.006226514000445604,
+      "argmax_agreement": 0.99609375
+    },
+    {
+      "seed": 2027,
+      "precision": "bf16",
+      "offset": 8192,
+      "max_abs_logit_difference": 0.1875,
+      "mean_abs_logit_difference": 0.023255789652466774,
+      "relative_l2": 0.004749635700136423,
+      "argmax_agreement": 0.99609375
+    },
+    {
+      "seed": 2027,
+      "precision": "bf16",
+      "offset": 65536,
+      "max_abs_logit_difference": 0.375,
+      "mean_abs_logit_difference": 0.025170128792524338,
+      "relative_l2": 0.004931118804961443,
+      "argmax_agreement": 1.0
+    }
+  ],
+  "thresholds": {
+    "validation_offsets": [
+      0,
+      8192,
+      65536
+    ],
+    "batch_size": 1,
+    "context": 512,
+    "fp32_max_abs_logit_difference": 0.002,
+    "fp32_relative_l2": 1e-05,
+    "gate": "All six FP32 whole-model cases must pass before INT4 evaluation; independent dense-reference butterfly error <2e-6 and matrix orthogonality error <1e-12.",
+    "bf16": "Record whole-model drift on the same six cases plus full BF16 NLL; bitwise equality not required."
+  },
+  "passed": true,
+  "bf16_interpretation": "Finite-precision drift is measured, not required to be bitwise equal; full BF16 NLL accompanies each method."
+}

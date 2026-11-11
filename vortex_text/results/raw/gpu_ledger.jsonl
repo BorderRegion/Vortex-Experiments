@@ -48,3 +48,5 @@
 {"stage": "train_rope_safe_s2027", "start_unix": 1794377958.5548468, "end_unix": 1794383807.6174912, "seconds": 5849.0626447200775, "success": true}
 {"stage": "train_vortex_s2027", "start_unix": 1794383815.8120422, "end_unix": 1794390256.8715787, "seconds": 6441.059536457062, "success": true}
 {"stage": "text_final_ptq_and_equivalence", "start_unix": 1794390262.7850833, "end_unix": 1794390324.3049407, "seconds": 61.51985764503479, "success": true}
+{"stage": "hadamard_correctness_and_frozen_validation", "start_unix": 1794392950.1441996, "end_unix": 1794393001.3458278, "seconds": 51.2016282081604, "success": true}
+{"stage": "one_shot_official_test_four_methods_two_seeds", "start_unix": 1794393119.4395838, "end_unix": 1794393171.9850593, "seconds": 52.54547572135925, "success": true}

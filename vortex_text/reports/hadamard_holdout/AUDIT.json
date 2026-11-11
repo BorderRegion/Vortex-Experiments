@@ -1,0 +1,576 @@
+{
+  "passed": 114,
+  "total": 114,
+  "checks": [
+    {
+      "name": "preregistered_plan_hash",
+      "passed": true,
+      "detail": "bd5438b1142f7896602af66aae08741fc013d043"
+    },
+    {
+      "name": "sources_match_frozen_plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hadamard_fp32_logit_equivalence_gate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_train_only_tokenizer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pinned_official_test_parquet",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "public_freeze_precedes_all_new_metrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_precedes_test_preparation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_prepared_before_evaluation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "both_splits_completed_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one_primary_metric_context512_qk_head_nll",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_safe_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_safe_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_safe_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_safe_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_safe_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_hadamard_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_hadamard_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_hadamard_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_hadamard_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_rope_hadamard_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_spectral_rope_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_spectral_rope_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_spectral_rope_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_spectral_rope_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_spectral_rope_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_vortex_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_vortex_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_vortex_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_vortex_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_vortex_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_safe_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_safe_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_safe_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_safe_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_safe_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_hadamard_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_hadamard_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_hadamard_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_hadamard_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_rope_hadamard_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_spectral_rope_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_spectral_rope_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_spectral_rope_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_spectral_rope_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_spectral_rope_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_vortex_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_vortex_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_vortex_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_vortex_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_vortex_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_safe_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_safe_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_safe_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_safe_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_safe_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_hadamard_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_hadamard_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_hadamard_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_hadamard_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_rope_hadamard_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_spectral_rope_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_spectral_rope_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_spectral_rope_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_spectral_rope_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_spectral_rope_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_vortex_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_vortex_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_vortex_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_vortex_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_vortex_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_safe_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_safe_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_safe_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_safe_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_safe_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_hadamard_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_hadamard_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_hadamard_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_hadamard_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_rope_hadamard_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_spectral_rope_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_spectral_rope_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_spectral_rope_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_spectral_rope_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_spectral_rope_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_vortex_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_vortex_bf16_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_vortex_bf16_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_vortex_qk_int4_head_coverage_and_quant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_vortex_qk_int4_head_sequence_nll_aggregation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_anchor_2026_rope_safe_bf16",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2026_rope_safe_qk_int4_head",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2026_spectral_rope_bf16",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2026_spectral_rope_qk_int4_head",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2026_vortex_bf16",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2026_vortex_qk_int4_head",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2027_rope_safe_bf16",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2027_rope_safe_qk_int4_head",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2027_spectral_rope_bf16",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2027_spectral_rope_qk_int4_head",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2027_vortex_bf16",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_anchor_2027_vortex_qk_int4_head",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "validation_2026_hadamard_same_rope_weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2026_spectral_same_vortex_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_hadamard_same_rope_weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "validation_2027_spectral_same_vortex_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_hadamard_same_rope_weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2026_spectral_same_vortex_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_hadamard_same_rope_weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_2027_spectral_same_vortex_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_local_backup_includes_new_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_evidence_matches_verified_backup_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cumulative_36h_budget",
+      "passed": true,
+      "detail": 36961.613275289536
+    },
+    {
+      "name": "both_new_gpu_phases_succeeded",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}
