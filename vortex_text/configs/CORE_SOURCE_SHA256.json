@@ -1,0 +1,14 @@
+{
+  "src/spectral.py": "ddc78b7d43af3bcd6f23b151ca243d93d9ba2eeb10fcd13e7588e0d05c98a419",
+  "src/common.py": "12f3564f7c71566beb4db284a5ee8c03b6e4d31f883da39196e39468227d60e9",
+  "src/vortex.py": "94917dbf3fbede37256e0217c245c44f01b6d549557fc4ff196fc2bb9041b61d",
+  "src/ring_quant.py": "b2a482e62bc0564850a0cec8d2f7d1c64d2b567744f1ce5f6e2209eed905f683",
+  "src/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "src/model.py": "22e278afce233ab2e845da52fa78535df60eed730b9efbc35e42ed21c35cf4bc",
+  "src/synthetic.py": "b92e968c9b5b74f5430b01234021ff39883a33816e5e53c5b97ebd79ad41caaa",
+  "src/quant.py": "9f28c548757873a1ecdaf809cc0b9395a4e42970c164505931df2a4d8eb39420",
+  "experiments/text.py": "418731bb38041266e6378e91eb45ba4e1243dc6fd6dd83b3eef69fd8930b11ef",
+  "experiments/evaluate.py": "2d93009b871df950bf623c2ad3763f9ae79a8279306ccafc247d62afb227a266",
+  "experiments/run_pair.py": "00f94822015d4089c402bf06871974344276b83da80412be60e15bea0c99c011",
+  "experiments/prepare_data.py": "02b7ca40a6c245762d91f8e4333764d4de280a56934cc3623a3eae9b73155c3c"
+}

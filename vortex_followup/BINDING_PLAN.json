@@ -1,0 +1,11 @@
+{
+  "status": "Separate post-diagnosis experiment, frozen before its first step; previous plans/results retained.",
+  "reason": "Neither more query supervision nor the short-sequence course established retrieval. Test the adjacent binding intermediate directly.",
+  "data": "Exactly the original associative generator and original train seed12026; same input/answer digest required as original P2.",
+  "model": "Original2layer512wide decoder and all original position operators unchanged. No additional parameters or inference operations.",
+  "objective": "Original last-query CE plus0.25 times first-block previous-key reconstruction CE at each explicit value token. Reuse existing norm and tied output projection.",
+  "schedule": "12000steps, batch16, original256/256/256/512 lengths, original LR and optimizer,61.44Mtokens per method.",
+  "gate": "RoPE mean>=90%, minimum>=80% on original length256/512 x distance8/32/128; only then run vortex and ring_plain at exactly the same budget.",
+  "report": "Record first-block binding reconstruction separately from final retrieval. If the former learns but retrieval fails, identify the remaining content-match/value-readout bottleneck; do not claim the task was solved.",
+  "scope_limit": "One fixed auxiliary weight; no automatic weight/LR/depth sweep and no text experiment. This is a training objective ablation, not confirmation of the earlier density hypothesis."
+}

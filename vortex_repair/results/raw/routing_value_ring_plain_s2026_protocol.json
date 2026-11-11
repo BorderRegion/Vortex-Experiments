@@ -1,0 +1,30 @@
+{
+  "config": {
+    "method": "ring_plain",
+    "steps": 12000,
+    "seed": 2026,
+    "preserve_value": true,
+    "batch": 16,
+    "lr": 0.0005,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.1,
+    "warmup": 200,
+    "schedule": "cosine to 10% of base LR",
+    "precision": "BF16 autocast, FP32 master",
+    "auxiliary": "All heads: block1 value->preceding key; block2 final query->matching value",
+    "auxiliary_schedule": "1 through step3000; cosine decay to0 at6000; zero for remaining6000 steps",
+    "initialization": "fresh",
+    "generator": "original associative, unchanged",
+    "training_source_sha256": "033f8f97c8472b68bab79335942833692058f8336cb99d5d88655e8e4f703b98",
+    "synthetic_source_sha256": "b92e968c9b5b74f5430b01234021ff39883a33816e5e53c5b97ebd79ad41caaa",
+    "value_preservation": "During auxiliary phase, decode own value token at block1 explicit value positions with existing norm+tied output; weight1 times auxiliary schedule."
+  },
+  "code_sha256": "3b40e9f94af7fee387f80ec7b2a201b045e6cacd69b789d9b8304638c07d6381",
+  "torch": "2.11.0.post1",
+  "device": "musa",
+  "seed": 2026,
+  "timestamp": 1794322152.3200033
+}

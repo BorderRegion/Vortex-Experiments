@@ -1,0 +1,11 @@
+{
+  "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+  "platform": "Linux-5.15.0-105-generic-x86_64-with-glibc2.35",
+  "torch": "2.11.0.post1",
+  "torch_musa": "2.11.0.post1+b431668",
+  "musa_available": true,
+  "device_name": "MTT S4000",
+  "device_properties": "_MusaDeviceProperties(name='MTT S4000', major='2, minor=2, total_memory=49049MB, multi_processor_count=56)",
+  "backend": "torch SDPA is_causal=True",
+  "native_4bit": false
+}

@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "checkpoint": "binding_rope_safe_s2026_final",
+      "length": 256,
+      "distance": 32,
+      "samples": 256,
+      "first_layer_binding_accuracy": 1.0,
+      "first_layer_query_key_recovery": 0.0390625,
+      "first_layer_cosine_value_retrieval": 0.08984375,
+      "second_layer_target_key_mass": 0.00010129539315251179,
+      "second_layer_target_value_mass": 0.027234066772507504
+    },
+    {
+      "checkpoint": "binding_rope_safe_s2026_final",
+      "length": 512,
+      "distance": 32,
+      "samples": 256,
+      "first_layer_binding_accuracy": 1.0,
+      "first_layer_query_key_recovery": 0.04296875,
+      "first_layer_cosine_value_retrieval": 0.09765625,
+      "second_layer_target_key_mass": 0.00012619257538482032,
+      "second_layer_target_value_mass": 0.029715648022829555
+    }
+  ],
+  "limitation": "Shared decoder probes and raw cosine matching are descriptive; they do not establish absence of information under all possible decoders."
+}

@@ -1,0 +1,80 @@
+{
+  "protocol": {
+    "mode": "pilot",
+    "method": "vortex",
+    "seed": 2026,
+    "batch": 16,
+    "context": 512,
+    "steps": 60,
+    "target_tokens": 491520,
+    "lr": 0.0005,
+    "min_lr": 5e-05,
+    "warmup_steps": 6,
+    "scheduler": "cosine",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay_matrix": 0.1,
+    "weight_decay_vector": 0.0,
+    "grad_clip": 1.0,
+    "precision": "BF16 autocast; FP32 weights",
+    "backend": "MUSA SDPA causal",
+    "supervision": "ordinary shifted next-token cross-entropy only",
+    "stream_sha256": "b54d45ba1d5541ca02b95c03f177f654d3c9d60ce91a4ccdc4e08f546ab5b306",
+    "consumed_prefix_sha256": "5e2fb6d6bbb9697412ff4400b237ee8e0d356a93956be76076c5f27fd1f036de",
+    "tokenizer_sha256": "c0b3a9deba02271c8194b693ec439bb743ad7c6f91d14ec5810f0fe8c1906bdb",
+    "initial_state_sha256": "21c756609443219fb12854bf564075cb5c54a36bf79526a482fec7fbbbdf3429",
+    "parameters": 27276288,
+    "model_config": {
+      "vocab_size": 16384,
+      "d_model": 512,
+      "heads": 4,
+      "layers": 6,
+      "context": 512,
+      "method": "vortex",
+      "backend": "sdpa"
+    },
+    "wall_deadline_unix": 1794406138
+  },
+  "validation": {
+    "nll": 7.075365881989455,
+    "perplexity": 1182.4760683618015,
+    "tokens": 32768,
+    "context": 512,
+    "precision": "bf16",
+    "position_buckets": [
+      {
+        "start": 0,
+        "end": 32,
+        "tokens": 2048,
+        "nll": 7.208942623175972
+      },
+      {
+        "start": 32,
+        "end": 128,
+        "tokens": 6144,
+        "nll": 7.03751044748545
+      },
+      {
+        "start": 128,
+        "end": 256,
+        "tokens": 8192,
+        "nll": 7.069367664753372
+      },
+      {
+        "start": 256,
+        "end": 512,
+        "tokens": 16384,
+        "nll": 7.0758636858981845
+      }
+    ]
+  },
+  "elapsed_seconds": 17.763830423355103,
+  "peak_allocated_bytes": 3364189696,
+  "peak_reserved_bytes": 3760193536,
+  "steady_step_seconds_median": 0.10475138656329364,
+  "steady_step_seconds_p95": 0.10509827206842601,
+  "steady_tokens_per_second": 78204.2154167589,
+  "final_state_sha256": "cc446cb8dd09b27034cc3b6d7f7ca3feb95b1eb5b194365f9c0ba36bf6d6c116"
+}

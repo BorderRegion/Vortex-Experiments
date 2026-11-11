@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "new_input_targets_loss_gradients",
+      "passed": true
+    },
+    {
+      "check": "unchanged_model.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_synthetic.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_vortex.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_spectral.py",
+      "passed": true
+    },
+    {
+      "check": "identical_original_input_and_answer_digest",
+      "passed": true
+    },
+    {
+      "check": "equal_61440k_tokens",
+      "passed": true
+    },
+    {
+      "check": "equal_192k_answer_labels",
+      "passed": true
+    },
+    {
+      "check": "same_parameter_count_as_original",
+      "passed": true
+    },
+    {
+      "check": "equal_auxiliary_label_counts",
+      "passed": true
+    },
+    {
+      "check": "equal_value_label_counts",
+      "passed": true
+    },
+    {
+      "check": "same_training_source_hash",
+      "passed": true
+    },
+    {
+      "check": "rope_safe_last6000steps_no_auxiliary",
+      "passed": true
+    },
+    {
+      "check": "rope_safe_fresh_test_calibration",
+      "passed": true
+    },
+    {
+      "check": "vortex_last6000steps_no_auxiliary",
+      "passed": true
+    },
+    {
+      "check": "vortex_fresh_test_calibration",
+      "passed": true
+    },
+    {
+      "check": "ring_plain_last6000steps_no_auxiliary",
+      "passed": true
+    },
+    {
+      "check": "ring_plain_fresh_test_calibration",
+      "passed": true
+    },
+    {
+      "check": "fp32_spectral_equivalence",
+      "passed": true
+    },
+    {
+      "check": "whole_model_ring_quant_pre_post_exact",
+      "passed": true
+    },
+    {
+      "check": "cumulative_36h_cap",
+      "passed": true,
+      "seconds": 12006.581597805023
+    }
+  ],
+  "passed_count": 21,
+  "check_count": 21,
+  "cumulative_seconds": 12006.581597805023,
+  "repair_incremental_seconds": 2575.2015204429626
+}

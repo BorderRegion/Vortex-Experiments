@@ -1,0 +1,21 @@
+{
+  "seed": 2027,
+  "created_unix": 1794377951.3988488,
+  "reason": "First seed shows per-head QK INT4 absolute NLL advantage of 0.007835, with BF16 disadvantage of 0.014546. Repeat once to check initialization variation; no hyperparameter search.",
+  "comparison": "Only initialization seed changes; preserve original order, tokenizer, architecture, optimizer, scheduler, batch and tokens.",
+  "budget": {
+    "steps": 61036,
+    "tokens_per_method": 500006912,
+    "projected_device_hours": 3.5
+  },
+  "methods": [
+    "rope_safe",
+    "vortex"
+  ],
+  "control": "spectral_rope from corresponding Vortex checkpoint",
+  "analyses": "Identical 33 full-validation conditions; report both seeds, no seed selection",
+  "scope_limit": "This second pair is the final planned text run; stop after evaluation, local backup, and two-seed summary.",
+  "expiry": "2026-11-11T22:38:58+08:00",
+  "train_cutoff": "2026-11-11T22:08:58+08:00",
+  "backup_directory": "/home/ubuntu/rope_change/vortex_text"
+}

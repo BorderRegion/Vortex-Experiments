@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "offset": 0,
+      "batch": 1,
+      "context": 4
+    },
+    {
+      "offset": 0,
+      "batch": 4,
+      "context": 8
+    },
+    {
+      "offset": 4,
+      "batch": 1,
+      "context": 4
+    },
+    {
+      "offset": 4,
+      "batch": 4,
+      "context": 8
+    },
+    {
+      "offset": 34,
+      "batch": 1,
+      "context": 4
+    },
+    {
+      "offset": 34,
+      "batch": 4,
+      "context": 8
+    },
+    {
+      "offset": 37,
+      "batch": 1,
+      "context": 4
+    },
+    {
+      "offset": 37,
+      "batch": 4,
+      "context": 8
+    },
+    {
+      "offset": 75,
+      "batch": 1,
+      "context": 4
+    },
+    {
+      "offset": 75,
+      "batch": 4,
+      "context": 8
+    }
+  ]
+}

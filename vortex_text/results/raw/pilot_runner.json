@@ -1,0 +1,44 @@
+{
+  "mode": "pilot",
+  "steps": 6104,
+  "started_unix": 1794363894.1297665,
+  "jobs": [
+    {
+      "name": "pilot_rope_safe",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "-m",
+        "experiments.text",
+        "--mode",
+        "pilot",
+        "--method",
+        "rope_safe",
+        "--steps",
+        "6104"
+      ],
+      "started_unix": 1794363894.1297843,
+      "exit_code": 0,
+      "ended_unix": 1794363918.6204622
+    },
+    {
+      "name": "pilot_vortex",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "-m",
+        "experiments.text",
+        "--mode",
+        "pilot",
+        "--method",
+        "vortex",
+        "--steps",
+        "6104"
+      ],
+      "started_unix": 1794363918.6210463,
+      "exit_code": 0,
+      "ended_unix": 1794363943.5156734
+    }
+  ],
+  "completed_unix": 1794363943.5165474
+}

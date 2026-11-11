@@ -1,0 +1,44 @@
+[
+  {
+    "length": 256,
+    "distance": 8,
+    "samples": 128,
+    "accuracy": 0.046875,
+    "nll": 3.4617646038532257
+  },
+  {
+    "length": 256,
+    "distance": 32,
+    "samples": 128,
+    "accuracy": 0.046875,
+    "nll": 3.4617104530334473
+  },
+  {
+    "length": 256,
+    "distance": 128,
+    "samples": 128,
+    "accuracy": 0.046875,
+    "nll": 3.4610434770584106
+  },
+  {
+    "length": 512,
+    "distance": 8,
+    "samples": 128,
+    "accuracy": 0.015625,
+    "nll": 3.4584674537181854
+  },
+  {
+    "length": 512,
+    "distance": 32,
+    "samples": 128,
+    "accuracy": 0.015625,
+    "nll": 3.458893746137619
+  },
+  {
+    "length": 512,
+    "distance": 128,
+    "samples": 128,
+    "accuracy": 0.015625,
+    "nll": 3.4609718322753906
+  }
+]

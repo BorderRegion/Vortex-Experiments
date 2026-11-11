@@ -1,0 +1,21 @@
+{"step": 1, "tokens": 8192, "loss": 9.789812088012695, "grad_norm": 4.0522260665893555, "lr": 2.5e-06, "seconds": 11.503114060964435, "elapsed_seconds": 11.503806591033936}
+{"step": 100, "tokens": 819200, "loss": 7.198313236236572, "grad_norm": 1.3842495679855347, "lr": 0.00025, "seconds": 0.09440044802613556, "elapsed_seconds": 20.907289266586304}
+{"step": 200, "tokens": 1638400, "loss": 6.547222137451172, "grad_norm": 1.0728741884231567, "lr": 0.0005, "seconds": 0.09466192009858787, "elapsed_seconds": 30.40498638153076}
+{"step": 300, "tokens": 2457600, "loss": 6.318996429443359, "grad_norm": 0.9668561220169067, "lr": 0.0004999969999395872, "seconds": 0.09455157699994743, "elapsed_seconds": 39.902841567993164}
+{"step": 400, "tokens": 3276800, "loss": 6.173881530761719, "grad_norm": 0.9113701581954956, "lr": 0.0004999879998383523, "seconds": 0.09488514508120716, "elapsed_seconds": 49.4114716053009}
+{"step": 500, "tokens": 4096000, "loss": 5.841780662536621, "grad_norm": 0.836676836013794, "lr": 0.0004999729999363026, "seconds": 0.09457012498751283, "elapsed_seconds": 58.914653301239014}
+{"step": 600, "tokens": 4915200, "loss": 6.040538787841797, "grad_norm": 0.9069045782089233, "lr": 0.0004999520006334436, "seconds": 0.09477951703593135, "elapsed_seconds": 68.41722226142883}
+{"step": 700, "tokens": 5734400, "loss": 5.795204162597656, "grad_norm": 0.8002755045890808, "lr": 0.0004999250024897681, "seconds": 0.0956424220930785, "elapsed_seconds": 77.91054105758667}
+{"step": 800, "tokens": 6553600, "loss": 5.5270538330078125, "grad_norm": 0.9923610687255859, "lr": 0.0004998920062252409, "seconds": 0.0946813968475908, "elapsed_seconds": 87.40650129318237}
+{"step": 900, "tokens": 7372800, "loss": 5.463434219360352, "grad_norm": 1.219954490661621, "lr": 0.0004998530127197802, "seconds": 0.09466142300516367, "elapsed_seconds": 96.90811657905579}
+{"step": 1000, "tokens": 8192000, "loss": 5.7545928955078125, "grad_norm": 0.854438841342926, "lr": 0.0004998080230132337, "seconds": 0.09448923519812524, "elapsed_seconds": 106.40693092346191}
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/autodl-tmp/vortex_text/experiments/text.py", line 205, in <module>
+    main()
+  File "/root/autodl-tmp/vortex_text/experiments/text.py", line 188, in main
+    write_json(f'results/raw/{name}_valid_step{step}.json', dict(step=step, tokens=step*n, **val))
+TypeError: dict() got multiple values for keyword argument 'tokens'

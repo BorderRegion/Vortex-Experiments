@@ -1,0 +1,51 @@
+{
+  "rows": [
+    {
+      "length": 256,
+      "distance": 32,
+      "samples": 64,
+      "pre_post_max_abs": 0.0,
+      "baseline_accuracy": 1.0,
+      "ring_quant_accuracy": 1.0,
+      "spectral_ring_quant_accuracy": 1.0,
+      "baseline_nll": 1.6763806343078613e-08,
+      "ring_quant_nll": 1.4901161193847656e-08,
+      "spectral_ring_quant_nll": 1.6763806343078613e-08
+    },
+    {
+      "length": 512,
+      "distance": 32,
+      "samples": 64,
+      "pre_post_max_abs": 0.0,
+      "baseline_accuracy": 1.0,
+      "ring_quant_accuracy": 1.0,
+      "spectral_ring_quant_accuracy": 1.0,
+      "baseline_nll": 5.774199962615967e-08,
+      "ring_quant_nll": 3.725290298461914e-08,
+      "spectral_ring_quant_nll": 5.960464477539063e-08
+    },
+    {
+      "length": 2048,
+      "distance": 32,
+      "samples": 64,
+      "pre_post_max_abs": 0.0,
+      "baseline_accuracy": 1.0,
+      "ring_quant_accuracy": 1.0,
+      "spectral_ring_quant_accuracy": 1.0,
+      "baseline_nll": 7.282940259756288e-07,
+      "ring_quant_nll": 7.338819614233216e-07,
+      "spectral_ring_quant_nll": 6.724147851855378e-07
+    }
+  ],
+  "groups": [
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    16
+  ],
+  "scales_per_head": 7,
+  "limitation": "Existing relative checkpoint; one distance and64 samples per length. This ceiling-prone task is a decoder integration/commutation check, not evidence of quantized retrieval or language quality."
+}

@@ -1,0 +1,49 @@
+{
+  "stage": "exploratory P3 real text after synthetic learning repair",
+  "prior_gpu_seconds": 12006.581597805023,
+  "expiry": "2026-11-11T22:38:58+08:00",
+  "save_reserve_minutes": 30,
+  "dataset": "WikiText-103 raw original train/validation split",
+  "tokenizer": "train-only byte BPE 16384",
+  "model": {
+    "layers": 6,
+    "d_model": 512,
+    "heads": 4,
+    "head_dim": 128,
+    "ffn": 2048,
+    "context": 512,
+    "tied_embedding": true
+  },
+  "training": {
+    "methods": [
+      "rope_safe",
+      "vortex"
+    ],
+    "seed": 2026,
+    "batch": 16,
+    "nominal_tokens": 500006912,
+    "steps_pending_pilot": false,
+    "supervision": "next-token CE only",
+    "steps": 61036,
+    "train_stream_repetition": "deterministic cyclic original order after end EOS",
+    "checkpoint_tokens": [
+      10002432,
+      25001984,
+      50003968,
+      250003456,
+      500006912
+    ]
+  },
+  "control": "spectral_rope derived from Vortex; never separately trained",
+  "evaluation": [
+    "full validation absolute NLL/PPL",
+    "PTQ penalty for QK head, QK group16, K head, QK ring7",
+    "FP32 whole-model equivalence",
+    "BF16 pre/post quantization commutation",
+    "context 128/256/512"
+  ],
+  "interpretation": "Prior per-head mechanism evidence is mixed and synthetic PTQ accuracy is saturated. This is an exploratory real-text test, not a claim that the old P1 gate was positive.",
+  "scale_budget": "Each quantization format uses identical scale partition across methods; ring7 has 7 FP32 scales/head and is not native group16; all quantization simulated.",
+  "scope": "No changes to system/driver/SDK or old experiments; no /root/wcc access.",
+  "budget_rationale": "Pilot 8192 tokens/step, ~0.095s RoPE and ~0.105s Vortex: 500M tokens/model projected ~3.4h combined, within 12h available and cumulative 36h cap. Budget fixed before either main training or any final PTQ results."
+}

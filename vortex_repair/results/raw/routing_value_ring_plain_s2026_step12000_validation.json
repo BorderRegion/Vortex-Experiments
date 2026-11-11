@@ -1,0 +1,441 @@
+{
+  "checkpoint": "routing_value_ring_plain_s2026_step12000",
+  "fresh_test": [
+    {
+      "length": 256,
+      "distance": 8,
+      "samples": 512,
+      "accuracy": 1.0,
+      "nll": 9.313225413087878e-09
+    },
+    {
+      "length": 256,
+      "distance": 32,
+      "samples": 512,
+      "accuracy": 1.0,
+      "nll": 8.847564014757836e-09
+    },
+    {
+      "length": 256,
+      "distance": 128,
+      "samples": 512,
+      "accuracy": 1.0,
+      "nll": 4.1909511416804435e-09
+    },
+    {
+      "length": 512,
+      "distance": 8,
+      "samples": 512,
+      "accuracy": 1.0,
+      "nll": 3.096647277489595e-08
+    },
+    {
+      "length": 512,
+      "distance": 32,
+      "samples": 512,
+      "accuracy": 1.0,
+      "nll": 2.956948930155079e-08
+    },
+    {
+      "length": 512,
+      "distance": 128,
+      "samples": 512,
+      "accuracy": 1.0,
+      "nll": 1.3504176443746019e-08
+    }
+  ],
+  "query_swap": {
+    "samples": 512,
+    "length": 256,
+    "distance": 32,
+    "original_accuracy": 1.0,
+    "changed_query_accuracy": 1.0,
+    "unchanged_argmax": 0.0,
+    "query_probability_change": 1.0
+  },
+  "ptq": [
+    {
+      "group": 128,
+      "kind": "simulated_INT4",
+      "rows": [
+        {
+          "length": 256,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 6.84518901561404e-08
+        },
+        {
+          "length": 256,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 0.00010935327736549816
+        },
+        {
+          "length": 256,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 0.00013148890866265805
+        },
+        {
+          "length": 512,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.818422189549864e-08
+        },
+        {
+          "length": 512,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.539025450471911e-08
+        },
+        {
+          "length": 512,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.0489095642339805e-08
+        },
+        {
+          "length": 1024,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 9.033827486071289e-08
+        },
+        {
+          "length": 1024,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 9.359790220653252e-08
+        },
+        {
+          "length": 1024,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 4.0930074629574875e-07
+        },
+        {
+          "length": 1024,
+          "distance": 512,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.04890954202952e-08
+        },
+        {
+          "length": 2048,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 4.881281531865511e-06
+        },
+        {
+          "length": 2048,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 0.0002605950897738296
+        },
+        {
+          "length": 2048,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 0.99609375,
+          "nll": 0.004258910381786052
+        },
+        {
+          "length": 2048,
+          "distance": 512,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 9.131984709753738e-06
+        },
+        {
+          "length": 2048,
+          "distance": 1333,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 7.564042408270133e-05
+        },
+        {
+          "length": 2048,
+          "distance": 1334,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.0543426073382776e-05
+        },
+        {
+          "length": 2048,
+          "distance": 1335,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 5.937033169534089e-07
+        }
+      ]
+    },
+    {
+      "group": 16,
+      "kind": "simulated_INT4",
+      "rows": [
+        {
+          "length": 256,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.4901159972602329e-08
+        },
+        {
+          "length": 256,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.7229463300516557e-08
+        },
+        {
+          "length": 256,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.3969838619232178e-09
+        },
+        {
+          "length": 512,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.6321575969111564e-08
+        },
+        {
+          "length": 512,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.5855901137082924e-08
+        },
+        {
+          "length": 512,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.3504176887835229e-08
+        },
+        {
+          "length": 1024,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 6.752087833294951e-08
+        },
+        {
+          "length": 1024,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 7.171182869747383e-08
+        },
+        {
+          "length": 1024,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 4.4237818963566156e-08
+        },
+        {
+          "length": 1024,
+          "distance": 512,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.3969838064120665e-08
+        },
+        {
+          "length": 2048,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 4.693857449389327e-07
+        },
+        {
+          "length": 2048,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 6.537858787680761e-07
+        },
+        {
+          "length": 2048,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.278252651561786e-07
+        },
+        {
+          "length": 2048,
+          "distance": 512,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.4854590535406942e-07
+        },
+        {
+          "length": 2048,
+          "distance": 1333,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.421438594080172e-08
+        },
+        {
+          "length": 2048,
+          "distance": 1334,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.7008352887492038e-08
+        },
+        {
+          "length": 2048,
+          "distance": 1335,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.421438594080172e-08
+        }
+      ]
+    },
+    {
+      "group": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        16
+      ],
+      "kind": "simulated_INT4",
+      "rows": [
+        {
+          "length": 256,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.3038515267460582e-08
+        },
+        {
+          "length": 256,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.6298141392034893e-08
+        },
+        {
+          "length": 256,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.2596289001318723e-09
+        },
+        {
+          "length": 512,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.352761013264427e-08
+        },
+        {
+          "length": 512,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.11993050283732e-08
+        },
+        {
+          "length": 512,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.4901160860780749e-08
+        },
+        {
+          "length": 1024,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 7.3574474290794e-08
+        },
+        {
+          "length": 1024,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 6.658955653549015e-08
+        },
+        {
+          "length": 1024,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 4.9825754855348237e-08
+        },
+        {
+          "length": 1024,
+          "distance": 512,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 1.5366822037066186e-08
+        },
+        {
+          "length": 2048,
+          "distance": 8,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 6.654282316276294e-07
+        },
+        {
+          "length": 2048,
+          "distance": 32,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 6.635656379927468e-07
+        },
+        {
+          "length": 2048,
+          "distance": 128,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 5.061728840516366e-07
+        },
+        {
+          "length": 2048,
+          "distance": 512,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.0908179676482064e-07
+        },
+        {
+          "length": 2048,
+          "distance": 1333,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.119930203077104e-08
+        },
+        {
+          "length": 2048,
+          "distance": 1334,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 2.980232050031617e-08
+        },
+        {
+          "length": 2048,
+          "distance": 1335,
+          "samples": 256,
+          "accuracy": 1.0,
+          "nll": 3.026798189864621e-08
+        }
+      ]
+    }
+  ]
+}

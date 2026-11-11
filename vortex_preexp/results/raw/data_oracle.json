@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "evaluation": [
+    {
+      "task": "relative",
+      "length": 256,
+      "distance": 1,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 256,
+      "distance": 2,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 256,
+      "distance": 8,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 256,
+      "distance": 32,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 256,
+      "distance": 128,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 512,
+      "distance": 1,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 512,
+      "distance": 2,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 512,
+      "distance": 8,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 512,
+      "distance": 32,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 512,
+      "distance": 128,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 2048,
+      "distance": 1,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 2048,
+      "distance": 2,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 2048,
+      "distance": 8,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 2048,
+      "distance": 32,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "relative",
+      "length": 2048,
+      "distance": 128,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 256,
+      "distance": 8,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 256,
+      "distance": 128,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 512,
+      "distance": 8,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 512,
+      "distance": 128,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 2048,
+      "distance": 8,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 2048,
+      "distance": 128,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 2048,
+      "distance": 1333,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 2048,
+      "distance": 1334,
+      "samples": 64,
+      "oracle_pass": true
+    },
+    {
+      "task": "associative",
+      "length": 2048,
+      "distance": 1335,
+      "samples": 64,
+      "oracle_pass": true
+    }
+  ],
+  "training_labels_checked": 1731,
+  "paired_associative_queries_and_answers_identical": true
+}

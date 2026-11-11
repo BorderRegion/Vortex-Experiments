@@ -1,0 +1,275 @@
+{
+  "reason": "Checkpoints, optimizer states, raw/tokenized corpora and other large binaries remain in the complete local archive; intentionally omitted from GitHub.",
+  "local_complete_archive": "/home/ubuntu/rope_change",
+  "files": [
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_associative_ring_plain_s2026_final.pt",
+      "bytes": 25724046
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_associative_ring_plain_s2026_mid.pt",
+      "bytes": 25723992
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_associative_rope_safe_s2026_final.pt",
+      "bytes": 25724019
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_associative_rope_safe_s2026_mid.pt",
+      "bytes": 25723965
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_associative_vortex_s2026_final.pt",
+      "bytes": 25723938
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_associative_vortex_s2026_mid.pt",
+      "bytes": 25723884
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_relative_ring_plain_s2026_final.pt",
+      "bytes": 25723965
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_relative_ring_plain_s2026_mid.pt",
+      "bytes": 25723911
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_relative_rope_safe_s2026_final.pt",
+      "bytes": 25723938
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_relative_rope_safe_s2026_mid.pt",
+      "bytes": 25723884
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_relative_vortex_s2026_final.pt",
+      "bytes": 25723793
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2_relative_vortex_s2026_mid.pt",
+      "bytes": 25723739
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2b_associative_ring_plain_s2026_final.pt",
+      "bytes": 25724201
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2b_associative_ring_plain_s2026_mid.pt",
+      "bytes": 25724147
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2b_associative_rope_safe_s2026_final.pt",
+      "bytes": 25724174
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2b_associative_rope_safe_s2026_mid.pt",
+      "bytes": 25724120
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2b_associative_vortex_s2026_final.pt",
+      "bytes": 25724093
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2b_associative_vortex_s2026_mid.pt",
+      "bytes": 25724039
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2c_associative_rope_safe_s2026_final.pt",
+      "bytes": 50911294
+    },
+    {
+      "path": "vortex_preexp/results/checkpoints/p2c_associative_rope_safe_s2026_mid.pt",
+      "bytes": 50911208
+    },
+    {
+      "path": "vortex_preexp/results/raw/p2_associative_vortex_s2026_qk.pt",
+      "bytes": 16779421
+    },
+    {
+      "path": "vortex_preexp/results/raw/p2_relative_vortex_s2026_qk.pt",
+      "bytes": 16779397
+    },
+    {
+      "path": "vortex_preexp/results/raw/p2b_associative_vortex_s2026_qk.pt",
+      "bytes": 16779429
+    },
+    {
+      "path": "vortex_followup/results/checkpoints/binding_rope_safe_aligned_s2026_final.pt",
+      "bytes": 76638481
+    },
+    {
+      "path": "vortex_followup/results/checkpoints/binding_rope_safe_s2026_final.pt",
+      "bytes": 76637809
+    },
+    {
+      "path": "vortex_followup/results/checkpoints/supervision_rope_safe_dense_curriculum_s2026_final.pt",
+      "bytes": 76644861
+    },
+    {
+      "path": "vortex_followup/results/checkpoints/supervision_rope_safe_dense_s2026_final.pt",
+      "bytes": 76643926
+    },
+    {
+      "path": "vortex_followup/results/checkpoints/supervision_rope_safe_sparse_s2026_final.pt",
+      "bytes": 76644011
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_rope_safe_s2026_step12000.pt",
+      "bytes": 76638465
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_rope_safe_s2026_step3000.pt",
+      "bytes": 76638381
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_rope_safe_s2026_step6000.pt",
+      "bytes": 76638381
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_ring_plain_s2026_step12000.pt",
+      "bytes": 76639501
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_ring_plain_s2026_step3000.pt",
+      "bytes": 76639417
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_ring_plain_s2026_step6000.pt",
+      "bytes": 76639417
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_rope_safe_s2026_step12000.pt",
+      "bytes": 76639417
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_rope_safe_s2026_step3000.pt",
+      "bytes": 76639333
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_rope_safe_s2026_step6000.pt",
+      "bytes": 76639333
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_vortex_s2026_step12000.pt",
+      "bytes": 76639101
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_vortex_s2026_step3000.pt",
+      "bytes": 76639017
+    },
+    {
+      "path": "vortex_repair/results/checkpoints/routing_value_vortex_s2026_step6000.pt",
+      "bytes": 76639017
+    },
+    {
+      "path": "vortex_text/data/raw/train-00000-of-00002.parquet",
+      "bytes": 156987808
+    },
+    {
+      "path": "vortex_text/data/raw/train-00001-of-00002.parquet",
+      "bytes": 157088770
+    },
+    {
+      "path": "vortex_text/data/raw/validation-00000-of-00001.parquet",
+      "bytes": 657209
+    },
+    {
+      "path": "vortex_text/data/train.bin",
+      "bytes": 244043410
+    },
+    {
+      "path": "vortex_text/data/validation.bin",
+      "bytes": 510192
+    },
+    {
+      "path": "vortex_text/results/checkpoints/spectral_rope_s2026_step61036.pt",
+      "bytes": 142677379
+    },
+    {
+      "path": "vortex_text/results/checkpoints/spectral_rope_s2027_step61036.pt",
+      "bytes": 142677379
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2026_step1221.pt",
+      "bytes": 360941188
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2026_step30518.pt",
+      "bytes": 360941401
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2026_step3052.pt",
+      "bytes": 360941188
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2026_step61036.pt",
+      "bytes": 360941401
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2026_step6104.pt",
+      "bytes": 360941188
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2027_step1221.pt",
+      "bytes": 360941188
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2027_step30518.pt",
+      "bytes": 360941401
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2027_step3052.pt",
+      "bytes": 360941188
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2027_step61036.pt",
+      "bytes": 360941401
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_rope_safe_s2027_step6104.pt",
+      "bytes": 360941188
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2026_step1221.pt",
+      "bytes": 360940549
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2026_step30518.pt",
+      "bytes": 360940762
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2026_step3052.pt",
+      "bytes": 360940549
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2026_step61036.pt",
+      "bytes": 360940762
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2026_step6104.pt",
+      "bytes": 360940549
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2027_step1221.pt",
+      "bytes": 360940549
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2027_step30518.pt",
+      "bytes": 360940762
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2027_step3052.pt",
+      "bytes": 360940549
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2027_step61036.pt",
+      "bytes": 360940762
+    },
+    {
+      "path": "vortex_text/results/checkpoints/train_vortex_s2027_step6104.pt",
+      "bytes": 360940549
+    }
+  ],
+  "total_bytes": 9981531686
+}

@@ -1,0 +1,58 @@
+{
+  "mode": "train",
+  "steps": 61036,
+  "started_unix": 1794364280.6449385,
+  "jobs": [
+    {
+      "name": "train_rope_safe",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "-m",
+        "experiments.text",
+        "--mode",
+        "train",
+        "--method",
+        "rope_safe",
+        "--steps",
+        "61036"
+      ],
+      "started_unix": 1794364280.6449554,
+      "exit_code": 0,
+      "ended_unix": 1794370127.5954149
+    },
+    {
+      "name": "train_vortex",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "-m",
+        "experiments.text",
+        "--mode",
+        "train",
+        "--method",
+        "vortex",
+        "--steps",
+        "61036"
+      ],
+      "started_unix": 1794370127.5963316,
+      "exit_code": 0,
+      "ended_unix": 1794376591.9951313
+    },
+    {
+      "name": "final_evaluation",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "-m",
+        "experiments.evaluate",
+        "--steps",
+        "61036"
+      ],
+      "started_unix": 1794376591.9957616,
+      "exit_code": 0,
+      "ended_unix": 1794376660.652957
+    }
+  ],
+  "completed_unix": 1794376660.653619
+}

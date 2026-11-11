@@ -1,0 +1,17 @@
+{
+  "frozen_reason": "Original RoPE associative control achieved only (0.078125+0.08203125+0.09375)/3 = 0.0846354 accuracy at length 256; it has not learned the task. Decision made before original associative Vortex results existed.",
+  "task": "associative",
+  "methods": ["rope_safe", "vortex", "ring_plain"],
+  "seed": 2026,
+  "base_steps": 12000,
+  "additional_steps": 48000,
+  "total_steps": 60000,
+  "batch": 16,
+  "total_tokens_per_method": 307200000,
+  "additional_tokens_per_method": 245760000,
+  "data": "Continue saved generator state from original final checkpoint, same data stream for all methods.",
+  "optimizer": "Fresh AdamW for all three because original optimizer moments were not saved; lr=5e-4, betas=(.9,.95), weight_decay=.1, clip=1, warmup=200, cosine to 5e-5.",
+  "preserve_original_results": true,
+  "stop_after_this_common_extension": true,
+  "estimated_additional_gpu_hours": 1.3
+}

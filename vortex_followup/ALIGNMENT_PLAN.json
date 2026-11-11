@@ -1,0 +1,9 @@
+{
+  "status": "Frozen after completed binding probe and before aligned training; earlier results preserved.",
+  "evidence": "First-layer value-to-key decoding is100% on unseen length256/512, but last-query key decoding with the same readout is3.91%/4.30%. CPU/MUSA full-model gradients pass at actual training lengths.",
+  "hypothesis": "Local binding supervision alone leaves query/key representations unaligned. Preserve key identity on key tokens, including the final query, with the same first-layer readout.",
+  "change": "Same0.25 auxiliary loss weight and value-to-previous-key targets; additionally key-token positions reconstruct their own key. Shared existing norm/output; no extra parameters or inference steps.",
+  "fixed_budget": "12000steps,16batch,61.44Mtokens, original generator/seed/input/answer digest/optimizer/LR/model.",
+  "gate": "RoPE six original conditions mean>=90%, min>=80%; only then train vortex/plain with identical budget.",
+  "limit": "One alignment trial, no weight/LR/architecture sweep. It tests this newly observed representation mismatch; it does not prove information is absent from other hidden subspaces."
+}

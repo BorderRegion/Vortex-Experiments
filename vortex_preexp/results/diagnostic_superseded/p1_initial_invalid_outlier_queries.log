@@ -1,0 +1,3 @@
+{"distribution": "isotropic", "rows": 144, "commutation_rows": 18}
+{"distribution": "outliers_1.5pct_x12", "rows": 144, "commutation_rows": 18}
+p1 PASS

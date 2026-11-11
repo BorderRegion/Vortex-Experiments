@@ -1,0 +1,54 @@
+{
+  "purpose": "Diagnose failed associative retrieval controls and test supervision density causally.",
+  "original_artifacts": "../vortex_preexp is preserved; this is a separate follow-up.",
+  "operator": "No change to any position operator or spectral frequencies.",
+  "diagnosis": "Read-only query erasure, content bag baseline, per-layer final-query target attention on original saved checkpoints.",
+  "stage1": {
+    "methods": [
+      "rope_safe"
+    ],
+    "conditions": [
+      "7 auxiliary query inputs with 8 supervised answers",
+      "identical inputs with final answer loss only"
+    ],
+    "steps_per_condition": 12000,
+    "batch": 16,
+    "tokens_per_condition": 61440000,
+    "seed": 2026,
+    "optimizer": "Original AdamW and warmup/cosine schedule",
+    "evaluation": "Original untouched generator and original unseen seeds; BF16 and INT4 head/group16",
+    "gate_for_matched_position_comparison": "dense mean >=90% and minimum >=80% on original-generator length256/512, distance8/32/128",
+    "if_gate_passes": "Run vortex and ring_plain dense conditions at the identical 12000-step budget.",
+    "if_gate_fails": "Report the result before considering any further bounded diagnosis; no automatic text training."
+  },
+  "ledger": "Copied 7314.8965s prior occupancy into separate ledger so the original 36h cumulative cap remains enforced.",
+  "scientific_limit": "Auxiliary queries change training input distribution. Paired sparse control isolates additional loss; all headline evaluations retain the original task.",
+  "bounded_fallback": {
+    "trigger": "Stage1 dense RoPE fails original-generator gate",
+    "schedule": "3000 steps at64; 3000 at128; 6000 at original256/512 schedule",
+    "steps": 12000,
+    "tokens": 39936000,
+    "supervision": "same8-query dense loss",
+    "gate": "same >=90% mean / >=80% minimum on six original conditions",
+    "matched_methods_if_pass": "vortex and ring_plain use identical schedule, steps, labels and data",
+    "stop_if_fail": "No further automatic training changes in this follow-up",
+    "freeze_note": "Recorded after dense step3000, before final dense/sparse results; learning-rate schedule unchanged."
+  },
+  "scale_revision": {
+    "description": "Implement the one previously proposed ring-aligned variable-length scale layout",
+    "groups": [
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      16
+    ],
+    "scales_per_head": 7,
+    "operator_unchanged": true,
+    "controls": "same group lengths and 7 FP32 scales for standard and spectral RoPE; include old per-head and group16 for context",
+    "evidence": "signed commutation, simulated INT4/FP4, actual first-layer Q/K/V replay from original learned relative and extended associative checkpoints",
+    "limits": "Not native group16; no inference speedup or whole-model/text claim"
+  }
+}

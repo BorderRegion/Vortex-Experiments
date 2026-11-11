@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "checkpoint": "binding_rope_safe_s2026",
+      "samples": 512,
+      "length": 256,
+      "distance": 32,
+      "original_accuracy": 0.078125,
+      "changed_query_accuracy": 0.078125,
+      "unchanged_argmax": 0.841796875,
+      "query_probability_change": 0.017517465515993536
+    }
+  ],
+  "limitation": "Counterfactual keys exist with unambiguous bindings and different values; some have repeated bindings. Original evaluation remains the main accuracy result."
+}

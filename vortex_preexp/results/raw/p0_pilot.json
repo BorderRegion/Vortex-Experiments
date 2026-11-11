@@ -1,0 +1,57 @@
+{
+  "config": {
+    "pilot_seconds": 70
+  },
+  "code_sha256": "9f99462d934eeb1002ced1a20ecec012b4b41e792baf7af502676d2043686352",
+  "torch": "2.11.0.post1",
+  "device": "musa",
+  "seed": 2026,
+  "timestamp": 1794300850.0113235,
+  "rows": [
+    {
+      "method": "rope_safe",
+      "batch": 16,
+      "sequence": 256,
+      "layers": 2,
+      "parameters": 6362112,
+      "steps": 4013,
+      "seconds": 69.96805297653191,
+      "median_step_s": 0.017192710656672716,
+      "p95_step_s": 0.017471475712954997,
+      "tokens_per_second": 238240.50097709804,
+      "peak_memory_bytes": 274599936,
+      "loss": 0.0004229802289046347,
+      "backend": "sdpa"
+    },
+    {
+      "method": "vortex",
+      "batch": 16,
+      "sequence": 256,
+      "layers": 2,
+      "parameters": 6362112,
+      "steps": 3735,
+      "seconds": 69.97998150624335,
+      "median_step_s": 0.018727619550190866,
+      "p95_step_s": 0.019060881179757416,
+      "tokens_per_second": 218714.3960834176,
+      "peak_memory_bytes": 304743424,
+      "loss": 0.000436566915595904,
+      "backend": "sdpa"
+    },
+    {
+      "method": "ring_plain",
+      "batch": 16,
+      "sequence": 256,
+      "layers": 2,
+      "parameters": 6362112,
+      "steps": 3735,
+      "seconds": 69.97165489755571,
+      "median_step_s": 0.018740529543720186,
+      "p95_step_s": 0.019029446213971825,
+      "tokens_per_second": 218563.72790557242,
+      "peak_memory_bytes": 304743424,
+      "loss": 0.00043558923061937094,
+      "backend": "sdpa"
+    }
+  ]
+}

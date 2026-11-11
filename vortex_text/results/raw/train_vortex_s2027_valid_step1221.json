@@ -1,0 +1,35 @@
+{
+  "step": 1221,
+  "training_tokens": 10002432,
+  "nll": 5.280776519951252,
+  "perplexity": 196.52241969703255,
+  "tokens": 32768,
+  "context": 512,
+  "precision": "bf16",
+  "position_buckets": [
+    {
+      "start": 0,
+      "end": 32,
+      "tokens": 2048,
+      "nll": 5.5671399181533445
+    },
+    {
+      "start": 32,
+      "end": 128,
+      "tokens": 6144,
+      "nll": 5.21702535677846
+    },
+    {
+      "start": 128,
+      "end": 256,
+      "tokens": 8192,
+      "nll": 5.26824935144511
+    },
+    {
+      "start": 256,
+      "end": 512,
+      "tokens": 16384,
+      "nll": 5.275151365618859
+    }
+  ]
+}

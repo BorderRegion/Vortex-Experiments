@@ -1,0 +1,19 @@
+{
+  "src/spectral.py": "ddc78b7d43af3bcd6f23b151ca243d93d9ba2eeb10fcd13e7588e0d05c98a419",
+  "src/common.py": "12f3564f7c71566beb4db284a5ee8c03b6e4d31f883da39196e39468227d60e9",
+  "src/vortex.py": "94917dbf3fbede37256e0217c245c44f01b6d549557fc4ff196fc2bb9041b61d",
+  "src/ring_quant.py": "b2a482e62bc0564850a0cec8d2f7d1c64d2b567744f1ce5f6e2209eed905f683",
+  "src/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "src/model.py": "22e278afce233ab2e845da52fa78535df60eed730b9efbc35e42ed21c35cf4bc",
+  "src/synthetic.py": "b92e968c9b5b74f5430b01234021ff39883a33816e5e53c5b97ebd79ad41caaa",
+  "src/quant.py": "9f28c548757873a1ecdaf809cc0b9395a4e42970c164505931df2a4d8eb39420",
+  "experiments/summarize_seeds.py": "ae7fc4d1822d5bf5aa2534ce752cc8abe965161b25ff2bc1b7fa8744730b7949",
+  "experiments/report.py": "49d30cd4cec8ecb8401de8bfff0ca7c673492565359f230d36aad506599f964b",
+  "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "experiments/backup.py": "8f88908b419645dafc1b80271ae2ff613b8aa7637bb8ab6cd18708e462dbd143",
+  "experiments/prepare_data.py": "02b7ca40a6c245762d91f8e4333764d4de280a56934cc3623a3eae9b73155c3c",
+  "experiments/mirror.py": "118b93f4ddc9a3c5ab40f06214c51e7a1fb434e92cfbe9fc30618f942474bdb9",
+  "experiments/text.py": "418731bb38041266e6378e91eb45ba4e1243dc6fd6dd83b3eef69fd8930b11ef",
+  "experiments/run_pair.py": "fd56d08373e7d6259602cb2a3ec0f892f9511cec3867eccc33a5c71716a39d7d",
+  "experiments/evaluate.py": "affc40a7ab3727feb6abf34b2828635458ee2f158a655293c25bd5d4e025ff1e"
+}

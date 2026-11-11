@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "position": -1000000,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.125,
+      "analytical_trace_correlation": 0.125
+    },
+    {
+      "position": -58,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.3515625,
+      "analytical_trace_correlation": 0.3515625
+    },
+    {
+      "position": -1,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.125,
+      "analytical_trace_correlation": 0.125
+    },
+    {
+      "position": 0,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 1.0,
+      "analytical_trace_correlation": 1.0
+    },
+    {
+      "position": 1,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.125,
+      "analytical_trace_correlation": 0.125
+    },
+    {
+      "position": 2,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.125,
+      "analytical_trace_correlation": 0.125
+    },
+    {
+      "position": 11,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.0390625,
+      "analytical_trace_correlation": 0.0390625
+    },
+    {
+      "position": 58,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.3515625,
+      "analytical_trace_correlation": 0.3515625
+    },
+    {
+      "position": 1333,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.125,
+      "analytical_trace_correlation": 0.125
+    },
+    {
+      "position": 1334,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.53125,
+      "analytical_trace_correlation": 0.53125
+    },
+    {
+      "position": 1335,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.125,
+      "analytical_trace_correlation": 0.125
+    },
+    {
+      "position": 14674,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.6171875,
+      "analytical_trace_correlation": 0.6171875
+    },
+    {
+      "position": 25346,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.6796875,
+      "analytical_trace_correlation": 0.6796875
+    },
+    {
+      "position": 1000000,
+      "exact_orthogonality": true,
+      "identity_tail": true,
+      "explicit_matrix_trace_correlation": 0.125,
+      "analytical_trace_correlation": 0.125
+    }
+  ],
+  "device": "cpu",
+  "dtype": "int64"
+}

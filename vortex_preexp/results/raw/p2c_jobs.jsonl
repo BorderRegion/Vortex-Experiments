@@ -1,0 +1,1 @@
+{"name": "p2c_associative_rope_safe_s2026", "command": ["/usr/bin/python", "-u", "-m", "experiments.p2", "--task", "associative", "--method", "rope_safe", "--layers", "4", "--steps", "12000", "--batch", "16"], "start": 1794307476.9173913, "end": 1794308109.771686, "returncode": 0}

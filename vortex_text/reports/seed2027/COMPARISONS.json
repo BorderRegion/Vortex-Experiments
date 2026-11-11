@@ -1,0 +1,242 @@
+{
+  "context512_vortex_minus_rope_bf16": {
+    "estimate": 0.007371450133051678,
+    "low": 0.003469191300691452,
+    "high": 0.01141805326991577,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_spectral_minus_vortex_bf16": {
+    "estimate": 9.103485762720213e-06,
+    "low": -7.158716557572913e-05,
+    "high": 8.918978162381228e-05,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_head_absolute_vortex_minus_rope": {
+    "estimate": -0.00937739708101026,
+    "low": -0.013254065116239491,
+    "high": -0.005332579609818717,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_head_penalty_vortex_minus_rope": {
+    "estimate": -0.01674884721406194,
+    "low": -0.017975645216908726,
+    "high": -0.015610580907287782,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_head_penalty_vortex_minus_spectral": {
+    "estimate": -0.002648859330968018,
+    "low": -0.0033704126702972684,
+    "high": -0.0019297162617613907,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_group16_absolute_vortex_minus_rope": {
+    "estimate": 0.002947401297433498,
+    "low": -0.0009450902484279028,
+    "high": 0.007043105422530115,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_group16_penalty_vortex_minus_rope": {
+    "estimate": -0.00442404883561818,
+    "low": -0.005161516219940665,
+    "high": -0.003708302391587015,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_group16_penalty_vortex_minus_spectral": {
+    "estimate": -0.0010304662904198792,
+    "low": -0.0015076542547912868,
+    "high": -0.0005314337112989644,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_k_int4_head_absolute_vortex_minus_rope": {
+    "estimate": -0.006608635960017435,
+    "low": -0.010530708748456115,
+    "high": -0.002599535596166287,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_k_int4_head_penalty_vortex_minus_rope": {
+    "estimate": -0.013980086093069112,
+    "low": -0.015091153703870173,
+    "high": -0.012978152795274419,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_k_int4_head_penalty_vortex_minus_spectral": {
+    "estimate": -0.002204770890187638,
+    "low": -0.0028875144346917655,
+    "high": -0.0015157986553444088,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_ring7_absolute_vortex_minus_rope": {
+    "estimate": 0.002318666248161413,
+    "low": -0.0016442549539776089,
+    "high": 0.006415779159062087,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_ring7_penalty_vortex_minus_rope": {
+    "estimate": -0.005052783884890265,
+    "low": -0.00570436770036011,
+    "high": -0.004351921184792992,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context512_qk_int4_ring7_penalty_vortex_minus_spectral": {
+    "estimate": -0.0006827659771333651,
+    "low": -0.0011079805552411221,
+    "high": -0.00023029909023420558,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_vortex_minus_rope_bf16": {
+    "estimate": 0.004447642984155845,
+    "low": 0.0003946445001863256,
+    "high": 0.008628214509124314,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_spectral_minus_vortex_bf16": {
+    "estimate": 8.671874153467198e-06,
+    "low": -6.074120895807111e-05,
+    "high": 7.628760258547387e-05,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_qk_int4_head_absolute_vortex_minus_rope": {
+    "estimate": -0.011720291478741323,
+    "low": -0.015724709449138896,
+    "high": -0.00753172734124636,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_qk_int4_head_penalty_vortex_minus_rope": {
+    "estimate": -0.01616793446289717,
+    "low": -0.01731851998850517,
+    "high": -0.015047529698270877,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_qk_int4_head_penalty_vortex_minus_spectral": {
+    "estimate": -0.002174296899563798,
+    "low": -0.0029838070219947274,
+    "high": -0.0013605970861550246,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_qk_int4_group16_absolute_vortex_minus_rope": {
+    "estimate": -2.6369029799388518e-06,
+    "low": -0.0039769982383135935,
+    "high": 0.004175646680453355,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_qk_int4_group16_penalty_vortex_minus_rope": {
+    "estimate": -0.004450279887135785,
+    "low": -0.005122483502021296,
+    "high": -0.0037449632485057577,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context256_qk_int4_group16_penalty_vortex_minus_spectral": {
+    "estimate": -0.0007635832080719952,
+    "low": -0.0012374429334688578,
+    "high": -0.00027117161220048167,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_vortex_minus_rope_bf16": {
+    "estimate": 0.004224225359106207,
+    "low": 0.00020243359644885511,
+    "high": 0.00828561701460147,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_spectral_minus_vortex_bf16": {
+    "estimate": -5.906250822934022e-05,
+    "low": -0.00012898537715645431,
+    "high": 1.0760599219346922e-05,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_qk_int4_head_absolute_vortex_minus_rope": {
+    "estimate": -0.01248778197809086,
+    "low": -0.01645217918663811,
+    "high": -0.008561169129125613,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_qk_int4_head_penalty_vortex_minus_rope": {
+    "estimate": -0.01671200733719707,
+    "low": -0.017855892248701818,
+    "high": -0.015611424693154446,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_qk_int4_head_penalty_vortex_minus_spectral": {
+    "estimate": -0.0012364451420016256,
+    "low": -0.0019687779294066,
+    "high": -0.00057801245809946,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_qk_int4_group16_absolute_vortex_minus_rope": {
+    "estimate": -0.0006278425625270518,
+    "low": -0.004539652846673374,
+    "high": 0.003227433348485639,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_qk_int4_group16_penalty_vortex_minus_rope": {
+    "estimate": -0.004852067921633258,
+    "low": -0.005544086630071192,
+    "high": -0.00419092957138284,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  },
+  "context128_qk_int4_group16_penalty_vortex_minus_spectral": {
+    "estimate": -0.0012128136101871923,
+    "low": -0.001773534636095637,
+    "high": -0.0006496884738788946,
+    "blocks": 32,
+    "block_tokens": 8192,
+    "repetitions": 10000
+  }
+}

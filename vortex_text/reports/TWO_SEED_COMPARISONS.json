@@ -1,0 +1,72 @@
+[
+  {
+    "seed": 2026,
+    "condition": "bf16",
+    "absolute_vortex_minus_rope": 0.014546369441013063,
+    "penalty_vortex_minus_rope": 0.0,
+    "penalty_vortex_minus_spectral": 0.0
+  },
+  {
+    "seed": 2026,
+    "condition": "qk_int4_head",
+    "absolute_vortex_minus_rope": -0.007835113623936962,
+    "penalty_vortex_minus_rope": -0.022381483064950025,
+    "penalty_vortex_minus_spectral": -0.002611375771712332
+  },
+  {
+    "seed": 2026,
+    "condition": "qk_int4_group16",
+    "absolute_vortex_minus_rope": 0.009944850249050674,
+    "penalty_vortex_minus_rope": -0.004601519191962389,
+    "penalty_vortex_minus_spectral": -0.0008928080325549814
+  },
+  {
+    "seed": 2026,
+    "condition": "k_int4_head",
+    "absolute_vortex_minus_rope": 0.00015731672586527523,
+    "penalty_vortex_minus_rope": -0.014389052715147788,
+    "penalty_vortex_minus_spectral": -0.0019253269308361354
+  },
+  {
+    "seed": 2026,
+    "condition": "qk_int4_ring7",
+    "absolute_vortex_minus_rope": 0.009495605683218944,
+    "penalty_vortex_minus_rope": -0.005050763757794119,
+    "penalty_vortex_minus_spectral": -0.0009373892327353417
+  },
+  {
+    "seed": 2027,
+    "condition": "bf16",
+    "absolute_vortex_minus_rope": 0.007371450133052626,
+    "penalty_vortex_minus_rope": 0.0,
+    "penalty_vortex_minus_spectral": 0.0
+  },
+  {
+    "seed": 2027,
+    "condition": "qk_int4_head",
+    "absolute_vortex_minus_rope": -0.009377397081011374,
+    "penalty_vortex_minus_rope": -0.016748847214064,
+    "penalty_vortex_minus_spectral": -0.0026488593309705877
+  },
+  {
+    "seed": 2027,
+    "condition": "qk_int4_group16",
+    "absolute_vortex_minus_rope": 0.0029474012974342045,
+    "penalty_vortex_minus_rope": -0.0044240488356184215,
+    "penalty_vortex_minus_spectral": -0.0010304662904214723
+  },
+  {
+    "seed": 2027,
+    "condition": "k_int4_head",
+    "absolute_vortex_minus_rope": -0.006608635960017484,
+    "penalty_vortex_minus_rope": -0.01398008609307011,
+    "penalty_vortex_minus_spectral": -0.0022047708901884455
+  },
+  {
+    "seed": 2027,
+    "condition": "qk_int4_ring7",
+    "absolute_vortex_minus_rope": 0.0023186662481617937,
+    "penalty_vortex_minus_rope": -0.005052783884890832,
+    "penalty_vortex_minus_spectral": -0.0006827659771340144
+  }
+]

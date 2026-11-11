@@ -1,0 +1,25 @@
+{
+  "mode": "train",
+  "steps": 61036,
+  "started_unix": 1794364005.9068863,
+  "jobs": [
+    {
+      "name": "train_rope_safe",
+      "command": [
+        "/usr/bin/python",
+        "-u",
+        "-m",
+        "experiments.text",
+        "--mode",
+        "train",
+        "--method",
+        "rope_safe",
+        "--steps",
+        "61036"
+      ],
+      "started_unix": 1794364005.9069078,
+      "exit_code": 1,
+      "ended_unix": 1794364120.7000644
+    }
+  ]
+}

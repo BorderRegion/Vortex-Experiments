@@ -1,0 +1,38 @@
+{
+  "dataset": "Salesforce/wikitext",
+  "configuration": "wikitext-103-raw-v1",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "download_host": "https://hf-mirror.com",
+  "original_host_network_unreachable": true,
+  "raw_sha256": {
+    "train-00000-of-00002.parquet": "74da360f23826045b3e6ac6375411fdb15f003030aa74f2596ed08b857cb9212",
+    "train-00001-of-00002.parquet": "ba090ac30dbf5461e8dcbdd1a1b8e6f3cf9c2c756d64f0c1220450acd514f720",
+    "validation-00000-of-00001.parquet": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c"
+  },
+  "tokenizer_sha256": "c0b3a9deba02271c8194b693ec439bb743ad7c6f91d14ec5810f0fe8c1906bdb",
+  "tokenizer_fit_split": "train",
+  "vocab_size": 16384,
+  "tokenizer_type": "byte-level BPE",
+  "packing": "Original row order; preserve row text including newlines; EOS before each top-level article heading and at split end. No cross-split packing.",
+  "packages": {
+    "tokenizers": "0.22.2",
+    "pyarrow": "24.0.0",
+    "numpy": "1.25.0",
+    "requests": "2.34.2"
+  },
+  "splits": {
+    "train": {
+      "tokens": 122021705,
+      "dtype": "<u2",
+      "sha256": "b54d45ba1d5541ca02b95c03f177f654d3c9d60ce91a4ccdc4e08f546ab5b306",
+      "articles": 29444
+    },
+    "validation": {
+      "tokens": 255096,
+      "dtype": "<u2",
+      "sha256": "cf267d0ca019146a23162954a0f31cce531d38d749bb03102814d2228395779f",
+      "articles": 60
+    }
+  },
+  "preparation_wall_seconds": 134.269305229187
+}

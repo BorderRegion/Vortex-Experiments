@@ -1,0 +1,12 @@
+{
+  "reason": "Two-layer associative RoPE still failed at 307.2M tokens. Calibrate one four-layer positive control within the task's allowed 2-4 layers before interpreting model-quality differences.",
+  "layers": 4,
+  "steps": 12000,
+  "batch": 16,
+  "seed": 2026,
+  "tokens_per_model": 61440000,
+  "unchanged": "Original 16-binding associative generator, initialization source, optimizer settings, sequence schedule, and test data.",
+  "positive_control_gate": "Mean accuracy >= 0.90 and minimum condition accuracy >= 0.80 over lengths 256/512 and distances8/32/128.",
+  "if_gate_passes": "Train vortex and ring_plain with the exact same four-layer 12000-step budget, then supplement real-QK P1.",
+  "if_gate_fails": "Record the failed RoPE calibration and leave associative RQ2 unresolved; no further training rescue or text experiment on this evidence."
+}

@@ -1,0 +1,181 @@
+{
+  "passed": 35,
+  "total": 35,
+  "checks": [
+    {
+      "name": "matched_seed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_batch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_target_tokens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_lr",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_min_lr",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_warmup_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_scheduler",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_betas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_weight_decay_matrix",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_weight_decay_vector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_grad_clip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_stream_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_consumed_prefix_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_tokenizer_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_initial_state_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_parameters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_supervision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matched_data_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rope_safe_full_token_budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rope_safe_full_validation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rope_safe_finite_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vortex_full_token_budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vortex_full_validation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vortex_finite_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FP32_equivalence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "permutation_quantization_commutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_33_conditions_full_validation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_conditions_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "derived_control_no_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shifted_cyclic_stream_checks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint_restore_and_evaluation_smoke",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "runner_success",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cumulative_under_36h",
+      "passed": true,
+      "detail": 36857.866171360016
+    }
+  ]
+}

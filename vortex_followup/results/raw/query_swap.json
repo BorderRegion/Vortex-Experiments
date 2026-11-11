@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "checkpoint": "p2_associative_rope_safe_s2026",
+      "samples": 512,
+      "length": 256,
+      "distance": 32,
+      "original_accuracy": 0.0859375,
+      "changed_query_accuracy": 0.06640625,
+      "unchanged_argmax": 0.548828125,
+      "query_probability_change": 0.07904136623255908
+    },
+    {
+      "checkpoint": "p2b_associative_rope_safe_s2026",
+      "samples": 512,
+      "length": 256,
+      "distance": 32,
+      "original_accuracy": 0.06640625,
+      "changed_query_accuracy": 0.068359375,
+      "unchanged_argmax": 0.75390625,
+      "query_probability_change": 0.02043123682960868
+    },
+    {
+      "checkpoint": "p2b_associative_vortex_s2026",
+      "samples": 512,
+      "length": 256,
+      "distance": 32,
+      "original_accuracy": 0.078125,
+      "changed_query_accuracy": 0.064453125,
+      "unchanged_argmax": 0.8828125,
+      "query_probability_change": 0.010004983560065739
+    },
+    {
+      "checkpoint": "supervision_rope_safe_dense_curriculum_s2026",
+      "samples": 512,
+      "length": 256,
+      "distance": 32,
+      "original_accuracy": 0.0859375,
+      "changed_query_accuracy": 0.095703125,
+      "unchanged_argmax": 0.880859375,
+      "query_probability_change": 0.015750286111142486
+    },
+    {
+      "checkpoint": "supervision_rope_safe_dense_s2026",
+      "samples": 512,
+      "length": 256,
+      "distance": 32,
+      "original_accuracy": 0.087890625,
+      "changed_query_accuracy": 0.12890625,
+      "unchanged_argmax": 0.826171875,
+      "query_probability_change": 0.022274389397352934
+    },
+    {
+      "checkpoint": "supervision_rope_safe_sparse_s2026",
+      "samples": 512,
+      "length": 256,
+      "distance": 32,
+      "original_accuracy": 0.072265625,
+      "changed_query_accuracy": 0.072265625,
+      "unchanged_argmax": 0.810546875,
+      "query_probability_change": 0.028241067804628983
+    }
+  ],
+  "limitation": "Counterfactual keys exist with unambiguous bindings and different values; some have repeated bindings. Original evaluation remains the main accuracy result."
+}

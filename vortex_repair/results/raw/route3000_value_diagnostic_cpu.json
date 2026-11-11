@@ -1,0 +1,8 @@
+{
+  "checkpoint_step": 3000,
+  "cpu_ordinary_accuracy": 0.0625,
+  "actual_target_attention_mass": 0.8579346463084221,
+  "first_layer_existing_value_readout": 0.016276041918899864,
+  "first_layer_value_ridge_heldout_accuracy": 0.9993489384651184,
+  "boundary": "CPU FP32 diagnostic; ridge uses separate first-half fitting and second-half heldout feature samples; not task accuracy."
+}

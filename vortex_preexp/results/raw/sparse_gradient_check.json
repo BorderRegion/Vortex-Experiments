@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "operator": "cross_entropy",
+      "dtype": "torch.float32",
+      "last_query_only": false,
+      "cpu_loss": 5.3133320808410645,
+      "musa_loss": 5.313331604003906,
+      "gradient": {
+        "max_abs": 2.3283064365386963e-10,
+        "relative_l2": 3.130303127818479e-08,
+        "norm_ratio": 1.0
+      },
+      "passed": true
+    },
+    {
+      "operator": "cross_entropy",
+      "dtype": "torch.float32",
+      "last_query_only": true,
+      "cpu_loss": 5.258038520812988,
+      "musa_loss": 5.258038520812988,
+      "gradient": {
+        "max_abs": 7.450580596923828e-09,
+        "relative_l2": 3.5780860940803905e-08,
+        "norm_ratio": 1.0
+      },
+      "passed": true
+    },
+    {
+      "operator": "causal_sdpa",
+      "dtype": "torch.float32",
+      "last_query_only": false,
+      "output": {
+        "max_abs": 5.960464477539062e-07,
+        "relative_l2": 1.6978420092073065e-07,
+        "norm_ratio": 1.0
+      },
+      "gradients": {
+        "q": {
+          "max_abs": 2.418333588938282e-10,
+          "relative_l2": 7.693835755162581e-07,
+          "norm_ratio": 0.9999998807907104
+        },
+        "k": {
+          "max_abs": 2.546585164964199e-10,
+          "relative_l2": 7.803860171406996e-07,
+          "norm_ratio": 1.0
+        },
+        "v": {
+          "max_abs": 1.3096723705530167e-10,
+          "relative_l2": 2.655922060057492e-07,
+          "norm_ratio": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "operator": "causal_sdpa",
+      "dtype": "torch.float32",
+      "last_query_only": true,
+      "output": {
+        "max_abs": 5.960464477539062e-07,
+        "relative_l2": 1.692860820412534e-07,
+        "norm_ratio": 1.0
+      },
+      "gradients": {
+        "q": {
+          "max_abs": 1.6298145055770874e-09,
+          "relative_l2": 2.612534615309414e-07,
+          "norm_ratio": 1.0
+        },
+        "k": {
+          "max_abs": 2.3283064365386963e-10,
+          "relative_l2": 1.0190809973664727e-07,
+          "norm_ratio": 1.0
+        },
+        "v": {
+          "max_abs": 1.7462298274040222e-10,
+          "relative_l2": 2.8621465730793716e-07,
+          "norm_ratio": 0.9999998211860657
+        }
+      },
+      "passed": true
+    },
+    {
+      "operator": "cross_entropy",
+      "dtype": "torch.bfloat16",
+      "last_query_only": false,
+      "cpu_loss": 5.194669723510742,
+      "musa_loss": 5.194669723510742,
+      "gradient": {
+        "max_abs": 1.1920928955078125e-07,
+        "relative_l2": 1.9637070636235876e-06,
+        "norm_ratio": 1.0
+      },
+      "passed": true
+    },
+    {
+      "operator": "cross_entropy",
+      "dtype": "torch.bfloat16",
+      "last_query_only": true,
+      "cpu_loss": 4.500333309173584,
+      "musa_loss": 4.500332832336426,
+      "gradient": {
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "norm_ratio": 1.0
+      },
+      "passed": true
+    },
+    {
+      "operator": "causal_sdpa",
+      "dtype": "torch.bfloat16",
+      "last_query_only": false,
+      "output": {
+        "max_abs": 0.0078125,
+        "relative_l2": 0.000786411517765373,
+        "norm_ratio": 0.9999880790710449
+      },
+      "gradients": {
+        "q": {
+          "max_abs": 9.5367431640625e-07,
+          "relative_l2": 0.003214683383703232,
+          "norm_ratio": 1.0000488758087158
+        },
+        "k": {
+          "max_abs": 9.5367431640625e-07,
+          "relative_l2": 0.004270709119737148,
+          "norm_ratio": 0.9999874830245972
+        },
+        "v": {
+          "max_abs": 9.5367431640625e-07,
+          "relative_l2": 0.0034319255501031876,
+          "norm_ratio": 1.0000394582748413
+        }
+      },
+      "passed": true
+    },
+    {
+      "operator": "causal_sdpa",
+      "dtype": "torch.bfloat16",
+      "last_query_only": true,
+      "output": {
+        "max_abs": 0.0078125,
+        "relative_l2": 0.0009508221410214901,
+        "norm_ratio": 0.9999721646308899
+      },
+      "gradients": {
+        "q": {
+          "max_abs": 3.814697265625e-06,
+          "relative_l2": 0.0031172046437859535,
+          "norm_ratio": 0.999796986579895
+        },
+        "k": {
+          "max_abs": 3.814697265625e-06,
+          "relative_l2": 0.002931159222498536,
+          "norm_ratio": 0.9991080164909363
+        },
+        "v": {
+          "max_abs": 4.76837158203125e-07,
+          "relative_l2": 0.0020491608884185553,
+          "norm_ratio": 1.0000064373016357
+        }
+      },
+      "passed": true
+    }
+  ],
+  "note": "CPU and MUSA receive identical FP32 or BF16-rounded inputs; no training checkpoint changed."
+}

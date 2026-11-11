@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "answers_checked": 8192,
+  "queries_per_sequence": 8,
+  "original_end_query_preserved": true,
+  "paired_inputs_deterministic": true
+}

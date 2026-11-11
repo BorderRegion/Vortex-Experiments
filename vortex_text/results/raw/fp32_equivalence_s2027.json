@@ -1,0 +1,27 @@
+{
+  "precision": "FP32 weights and activations; no autocast",
+  "cases": [
+    {
+      "offset": 0,
+      "max_abs_logit_difference": 3.24249267578125e-05,
+      "mean_abs_logit_difference": 3.441310809648712e-06,
+      "relative_l2": 1.072856321115978e-06,
+      "argmax_agreement": 1.0
+    },
+    {
+      "offset": 8192,
+      "max_abs_logit_difference": 4.100799560546875e-05,
+      "mean_abs_logit_difference": 3.560131972335512e-06,
+      "relative_l2": 7.766893759253435e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "offset": 65536,
+      "max_abs_logit_difference": 3.814697265625e-05,
+      "mean_abs_logit_difference": 3.447296876402106e-06,
+      "relative_l2": 7.198661364782311e-07,
+      "argmax_agreement": 1.0
+    }
+  ],
+  "passed": true
+}

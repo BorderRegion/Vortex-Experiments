@@ -1,0 +1,190 @@
+{
+  "rows": [
+    {
+      "method": "rope_safe",
+      "length": 256,
+      "bf16": false,
+      "cpu_loss": 5.462224960327148,
+      "musa_loss": 5.462224960327148,
+      "loss_abs_difference": 0.0,
+      "gradient_relative_l2": 1.2641696685022907e-06,
+      "gradient_norm_ratio": 1.0,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 1.4758252291358076e-06,
+          "norm_ratio": 0.9999997615814209
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 1.0207435252596042e-06,
+          "norm_ratio": 1.0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "method": "rope_safe",
+      "length": 256,
+      "bf16": true,
+      "cpu_loss": 4.953976154327393,
+      "musa_loss": 4.952750205993652,
+      "loss_abs_difference": 0.0012259483337402344,
+      "gradient_relative_l2": 0.0052689844742417336,
+      "gradient_norm_ratio": 0.999844491481781,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 0.005574902519583702,
+          "norm_ratio": 0.9997478127479553
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 0.004492080304771662,
+          "norm_ratio": 0.9999598264694214
+        }
+      ],
+      "passed": true
+    },
+    {
+      "method": "rope_safe",
+      "length": 512,
+      "bf16": false,
+      "cpu_loss": 4.445324897766113,
+      "musa_loss": 4.44532585144043,
+      "loss_abs_difference": 9.5367431640625e-07,
+      "gradient_relative_l2": 1.3441251667245524e-06,
+      "gradient_norm_ratio": 0.9999996423721313,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 1.5187309827524587e-06,
+          "norm_ratio": 0.9999996423721313
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 1.1872250524902483e-06,
+          "norm_ratio": 0.9999995827674866
+        }
+      ],
+      "passed": true
+    },
+    {
+      "method": "rope_safe",
+      "length": 512,
+      "bf16": true,
+      "cpu_loss": 5.566259384155273,
+      "musa_loss": 5.568192481994629,
+      "loss_abs_difference": 0.0019330978393554688,
+      "gradient_relative_l2": 0.005842160899192095,
+      "gradient_norm_ratio": 0.9994218945503235,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 0.0064313686452806,
+          "norm_ratio": 0.9993462562561035
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 0.004979054443538189,
+          "norm_ratio": 0.9992502927780151
+        }
+      ],
+      "passed": true
+    },
+    {
+      "method": "vortex",
+      "length": 256,
+      "bf16": false,
+      "cpu_loss": 4.632455825805664,
+      "musa_loss": 4.632454872131348,
+      "loss_abs_difference": 9.5367431640625e-07,
+      "gradient_relative_l2": 1.1820814052043715e-06,
+      "gradient_norm_ratio": 1.0000001192092896,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 1.1995980457868427e-06,
+          "norm_ratio": 1.0000001192092896
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 1.0666888101695804e-06,
+          "norm_ratio": 0.9999998211860657
+        }
+      ],
+      "passed": true
+    },
+    {
+      "method": "vortex",
+      "length": 256,
+      "bf16": true,
+      "cpu_loss": 4.988128662109375,
+      "musa_loss": 4.989184379577637,
+      "loss_abs_difference": 0.0010557174682617188,
+      "gradient_relative_l2": 0.006117260083556175,
+      "gradient_norm_ratio": 1.0001665353775024,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 0.007079522591084242,
+          "norm_ratio": 1.0004680156707764
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 0.005497120786458254,
+          "norm_ratio": 1.0000637769699097
+        }
+      ],
+      "passed": true
+    },
+    {
+      "method": "vortex",
+      "length": 512,
+      "bf16": false,
+      "cpu_loss": 5.03594970703125,
+      "musa_loss": 5.035949230194092,
+      "loss_abs_difference": 4.76837158203125e-07,
+      "gradient_relative_l2": 1.286588485527318e-06,
+      "gradient_norm_ratio": 1.0,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 1.478423200751422e-06,
+          "norm_ratio": 0.9999999403953552
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 1.1726107231879723e-06,
+          "norm_ratio": 1.0000001192092896
+        }
+      ],
+      "passed": true
+    },
+    {
+      "method": "vortex",
+      "length": 512,
+      "bf16": true,
+      "cpu_loss": 4.821451663970947,
+      "musa_loss": 4.820062637329102,
+      "loss_abs_difference": 0.0013890266418457031,
+      "gradient_relative_l2": 0.005377854220569134,
+      "gradient_norm_ratio": 0.9997259974479675,
+      "qkv_gradients": [
+        {
+          "name": "blocks.0.attn.qkv.weight",
+          "relative_l2": 0.006033162120729685,
+          "norm_ratio": 0.9992017149925232
+        },
+        {
+          "name": "blocks.1.attn.qkv.weight",
+          "relative_l2": 0.004850808065384626,
+          "norm_ratio": 1.0000795125961304
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "reference": "Identical initial weights and original last-query data. CPU eager attention versus MUSA SDPA; actual length256/512,2layer512wide models."
+}

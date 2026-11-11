@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.pt
+*.pth
+*.bin
+*.parquet
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+**/results/checkpoints/
+**/data/raw/
+**/tmp/

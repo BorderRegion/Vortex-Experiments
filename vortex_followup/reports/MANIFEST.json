@@ -1,0 +1,434 @@
+{
+  "files": [
+    {
+      "path": "ALIGNMENT_PLAN.json",
+      "size": 1150,
+      "sha256": "3a9059d8373f1c8f67a84aaffc6d288804762aaafd374237407cd044dd69244b"
+    },
+    {
+      "path": "BINDING_PLAN.json",
+      "size": 1420,
+      "sha256": "e9ae200d1f349757396ab2ef474a7d9b178e0c4d7be828fb07fb899aa33ff251"
+    },
+    {
+      "path": "PLAN.json",
+      "size": 2835,
+      "sha256": "7ff3875281649185784420735de76683b3a7e0ee1f0c6d13a47acf12019ff5e1"
+    },
+    {
+      "path": "README.md",
+      "size": 4188,
+      "sha256": "67e902b0c4243ff31d20dc5f2ab4206d3d95f40712276e19b487065decf191c5"
+    },
+    {
+      "path": "experiments/binding.py",
+      "size": 5525,
+      "sha256": "ca71acc5e6a868e52c1384720e84424b624569b1d5e164eac1703486e8f2c168"
+    },
+    {
+      "path": "experiments/binding_probe.py",
+      "size": 3134,
+      "sha256": "31c3d0fd0a544ef0ba5ee94b77a436a9be1b05282ec18634c85d66e4c858d9c5"
+    },
+    {
+      "path": "experiments/check_supervision.py",
+      "size": 1907,
+      "sha256": "2fa3ea77a153c9c0f2016f84ac9957dd5770064ea7d9c8beee72c0cda2ff22c3"
+    },
+    {
+      "path": "experiments/continue_stage.py",
+      "size": 2163,
+      "sha256": "add01a511f5e50a5b565798412265d292a952e64a8d0735f7c35225f24dbb5f9"
+    },
+    {
+      "path": "experiments/diagnose.py",
+      "size": 3826,
+      "sha256": "ca0223a8f0cf2401effb79b47dbdebf174898673dd775d7c71cf09f0ce52b88c"
+    },
+    {
+      "path": "experiments/final_checks.py",
+      "size": 916,
+      "sha256": "8d7891ac8c5066761b5d68f599388e2acf555faea9f87295da74d2b2f0946beb"
+    },
+    {
+      "path": "experiments/full_gradient.py",
+      "size": 2641,
+      "sha256": "c6d27356658a9d57b21c003b25a5b339676075645aa84ea191d78162c65065b9"
+    },
+    {
+      "path": "experiments/query_swap.py",
+      "size": 3240,
+      "sha256": "68efdcab146140c565ea46eddd2b1a80941951772bad017c3b1c8f2410eee303"
+    },
+    {
+      "path": "experiments/report.py",
+      "size": 16313,
+      "sha256": "1e06dd2f172a271d01c7a1433454c96494212667b7ce0f072b4d6b7eb24c3805"
+    },
+    {
+      "path": "experiments/ring_groups.py",
+      "size": 4918,
+      "sha256": "4dc6ef98f9c26dbeca8546249210508fcc78174ef983ed8d11ec1ed6e4a7def5"
+    },
+    {
+      "path": "experiments/ring_model.py",
+      "size": 2584,
+      "sha256": "957d7f8a148988ca7eafb4bf2ba4a48624c9985c06a11e3e642b46f542f86061"
+    },
+    {
+      "path": "experiments/run.py",
+      "size": 885,
+      "sha256": "6b70f377bbd76ce555e0b8ba43e6c17acbc16ace1ca4ba18cc296f4a98a90c0d"
+    },
+    {
+      "path": "experiments/run_alignment.py",
+      "size": 1092,
+      "sha256": "1ab6ae28ed35c81925dbda8efa6fe67e7b95872431809ad8ec864fd5cd4c046b"
+    },
+    {
+      "path": "experiments/run_binding.py",
+      "size": 1186,
+      "sha256": "bd334ec3a614dde5cdd81f3eb47b5f0d66fef74eda956ca2018663a99fb0faf7"
+    },
+    {
+      "path": "experiments/supervision.py",
+      "size": 6889,
+      "sha256": "df587c5ddae13b15fb8e61b0bf9ba73da2e78785b60e4ba5394b67f007b5af92"
+    },
+    {
+      "path": "reports/AUDIT.json",
+      "size": 1098,
+      "sha256": "e49db13bd29e6802d08dc86fc2a6a93cc391a2c96cfbd8b80db73b59a03bbc49"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "size": 8611,
+      "sha256": "54bf88d114a4f2cf9d8a22f049a39d055a60b0bfd19a742cacc8ea3dabee7212"
+    },
+    {
+      "path": "reports/RESULTS.csv",
+      "size": 26696,
+      "sha256": "a9c8e8e0c7b529fbd093ede8c2904397b6cba79c5be899009946972669c3b889"
+    },
+    {
+      "path": "reports/accuracy.png",
+      "size": 71693,
+      "sha256": "03d39c59483ee4e1422e34759e13f4d46eefdf485dba8eee16ba9ff3519a07cb"
+    },
+    {
+      "path": "reports/ring_groups.png",
+      "size": 125285,
+      "sha256": "48fa8b6c08a32da1970dc02c4c15c6958ac498c491489ddf716f1867782984c3"
+    },
+    {
+      "path": "results/checkpoints/binding_rope_safe_aligned_s2026_final.pt",
+      "size": 76638481,
+      "sha256": "a173d3c9aa129f43a6e040bc1b2ddf85c8d192e57ce0c949a69f2c8290583c9d"
+    },
+    {
+      "path": "results/checkpoints/binding_rope_safe_s2026_final.pt",
+      "size": 76637809,
+      "sha256": "aa182a8816b3f9e33557bae0e346b850e405e99637126a72e924f061b02a9ce8"
+    },
+    {
+      "path": "results/checkpoints/supervision_rope_safe_dense_curriculum_s2026_final.pt",
+      "size": 76644861,
+      "sha256": "d17a0b30db016cc8983349027973068d807fec614141e5e0a20834cc224906b6"
+    },
+    {
+      "path": "results/checkpoints/supervision_rope_safe_dense_s2026_final.pt",
+      "size": 76643926,
+      "sha256": "09dd2b1885297c5f3a06f4a84d449614385938a3610a2ac72783ce175b0c7bd6"
+    },
+    {
+      "path": "results/checkpoints/supervision_rope_safe_sparse_s2026_final.pt",
+      "size": 76644011,
+      "sha256": "6ad6cba3d3c380d413e97c49ebd2927b8f9e2441a916de568561dcf481749a37"
+    },
+    {
+      "path": "results/raw/alignment_gate.json",
+      "size": 66,
+      "sha256": "3cf0eac0410e69fff59bfac6a232fd34f38ccac25868842416ca73b96a13b21c"
+    },
+    {
+      "path": "results/raw/alignment_stage_complete.json",
+      "size": 144,
+      "sha256": "a44400f88f86c66cc736187bdbc8fb2185c44da4163e50b61d2f016664967d80"
+    },
+    {
+      "path": "results/raw/binding_gate.json",
+      "size": 76,
+      "sha256": "4048f411c6696f06c5cb053c73968b62e5f506b07f5c7f2bc27202c09a1f8fb1"
+    },
+    {
+      "path": "results/raw/binding_probe.json",
+      "size": 984,
+      "sha256": "51a9e6c056598e1f6d1e861b872aee6c627da4b23e1faaaf8607dd1369c9b882"
+    },
+    {
+      "path": "results/raw/binding_probe_aligned.json",
+      "size": 984,
+      "sha256": "3b141e3ffce7649e46bfa05877ba77fa9373ab550cd4d11983d85d9571901827"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_aligned_s2026.json",
+      "size": 8671,
+      "sha256": "290f7ac3ceddf7a859a31250e4f062e11f7178abec62bac2bd1fe44becd429ec"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_aligned_s2026_curve.jsonl",
+      "size": 4181,
+      "sha256": "36cac9ff05ed2e68acdbd05befc3a04f51e8713cb2daa3b1896c954190f0fc22"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_aligned_s2026_eval_step12000.json",
+      "size": 744,
+      "sha256": "9e67593bedb0678aef8c38791c1869366995cfcbff97dcf012f0580eb578aad8"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_aligned_s2026_eval_step3000.json",
+      "size": 746,
+      "sha256": "20e067287cda584702e9bf602f1297da534b3da1540dce1e1c35180c332575aa"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_aligned_s2026_eval_step6000.json",
+      "size": 748,
+      "sha256": "3ade648acdac815950224faa55d56c4ca2e7e2f3afaa50bb49c90eea260c2f7e"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_aligned_s2026_eval_step9000.json",
+      "size": 737,
+      "sha256": "ca5b50bc80dac9a190fcd5efd8fc74fc80b3a36da4187a4e72b11ea796b9a39c"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_s2026.json",
+      "size": 8665,
+      "sha256": "85a2516e5dd1ec2e87875f6caf6a3c8f9c75288020ce84e46bf6efa02f624cd7"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_s2026_curve.jsonl",
+      "size": 4211,
+      "sha256": "740362b9a9d5e52c714f2907de7e3d2c9e5657b870f4d72cc52371aa40c67a95"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_s2026_eval_step12000.json",
+      "size": 742,
+      "sha256": "b48e46881abc1fa2414a0df0d174c6b3fea85e9f438ce547c7925829a759681b"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_s2026_eval_step3000.json",
+      "size": 744,
+      "sha256": "f365c37354b23f67976402f309745cc4674800943d89631c22d9726f40b5ea0e"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_s2026_eval_step6000.json",
+      "size": 744,
+      "sha256": "bf9e1a60ae9d743146422224a6c835bc63ebf4040ebcb5dc3c62e2060cbc2643"
+    },
+    {
+      "path": "results/raw/binding_rope_safe_s2026_eval_step9000.json",
+      "size": 749,
+      "sha256": "a6e0bc9f87b14d8ea45fddfa135c42173ffcd6752e42132f032508b4aa44d322"
+    },
+    {
+      "path": "results/raw/binding_stage_complete.json",
+      "size": 154,
+      "sha256": "8b11ae3f2e0df9cd76fb5d82a0e1957878cd68a5fe65f8bd18f2a0daf80c7838"
+    },
+    {
+      "path": "results/raw/curriculum_gate.json",
+      "size": 77,
+      "sha256": "a6ff917851352a2e37403976340ff09699a2b6e8c682a3ad7674263f722d8a63"
+    },
+    {
+      "path": "results/raw/diagnosis.json",
+      "size": 3508,
+      "sha256": "fbbd777e2c6079aa90969bbfdb4a7365e0f9a652496883700cfde46400fd804d"
+    },
+    {
+      "path": "results/raw/flat_gate.json",
+      "size": 69,
+      "sha256": "aa716f2584cf48ad6c6d9cd7ac0eff1d870f84e895069ea39f9cddd31a819b9d"
+    },
+    {
+      "path": "results/raw/full_gradient.json",
+      "size": 5566,
+      "sha256": "e75583dbd8e7f92acde5fb601bafc5d13ad1818ebb4a7b64f468091a6c5fcbc8"
+    },
+    {
+      "path": "results/raw/gpu_ledger.jsonl",
+      "size": 5192,
+      "sha256": "b06e88ae038f8a2cf3bd2db7c832f2de754f217ef1674c4fa2b32ed11e6dd249"
+    },
+    {
+      "path": "results/raw/query_swap.json",
+      "size": 2066,
+      "sha256": "51dd609833e750d47d7ccb18c3caafe61373f48c625a557758c57a0d7eb173f7"
+    },
+    {
+      "path": "results/raw/query_swap_aligned.json",
+      "size": 501,
+      "sha256": "c61df6eb33fd865a4e07d1f7461eb3bd876a4c40538db1b64488d6fd25bdf617"
+    },
+    {
+      "path": "results/raw/query_swap_binding.json",
+      "size": 493,
+      "sha256": "592510103af7b8653049d5c564d756c4491f5f949836f9d68ec831151e9a2035"
+    },
+    {
+      "path": "results/raw/ring_groups.json",
+      "size": 26945,
+      "sha256": "5a240a4e4b33f1e797b58b24a9f8ab2f6ac7043197ce71256caa17bf9842d494"
+    },
+    {
+      "path": "results/raw/ring_model.json",
+      "size": 1426,
+      "sha256": "852e769ed9bd80a9d44c898ac5de3ff934867139197d194de8c0e7af037f169c"
+    },
+    {
+      "path": "results/raw/stage1_complete.json",
+      "size": 23,
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "results/raw/stage2_complete.json",
+      "size": 188,
+      "sha256": "3a85bdaea6fecaea65248d7d1698845ab9ea2220aa6058b0858fc16510ae2534"
+    },
+    {
+      "path": "results/raw/supervision_oracle.json",
+      "size": 156,
+      "sha256": "d3c707f75d647b88b610d876773378041a8826615612c62519dfbf128603ed89"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_curriculum_s2026.json",
+      "size": 8589,
+      "sha256": "acf501f5f36df045e816a37038f825832c7e890c3b3c1a883be88e456eb6bbd4"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_curriculum_s2026_curve.jsonl",
+      "size": 4042,
+      "sha256": "5fe8b23eb3d201425d38371230047b8c36e57ae5e9c6921a82b7653695fcf01d"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_curriculum_s2026_eval_step12000.json",
+      "size": 740,
+      "sha256": "1d7964420103a3b8392dec769a0f0d81648eeaf526da7bdb86ce7d735cfbf3d2"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_curriculum_s2026_eval_step3000.json",
+      "size": 743,
+      "sha256": "2eb76769d633aa09460ac780c761fc600eb6110c7221e0825f9ad5e4d1a40ba8"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_curriculum_s2026_eval_step6000.json",
+      "size": 745,
+      "sha256": "0e4b266936b99c7031073645c8cc94ff67202175683bc95407e8004f4a579893"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_curriculum_s2026_eval_step9000.json",
+      "size": 744,
+      "sha256": "4bfa0c1c77cc2315ba27f0e19767b1a754f1d5009e7f45255955b3a5555aff78"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_s2026.json",
+      "size": 8567,
+      "sha256": "ee7330f3a32a4d0453d00e4b791d6f95580c468ec36b01487e69e961074f4467"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_s2026_curve.jsonl",
+      "size": 3692,
+      "sha256": "088d70034b58b743b4ef52d273a6454368e26ce3053b856d169e66e882e03ed7"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_s2026_eval_step12000.json",
+      "size": 748,
+      "sha256": "3fd930b84df53f73d2abe09bee590f9a5dde3833cfdcb1635d578f2a9c9f3a7d"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_s2026_eval_step3000.json",
+      "size": 748,
+      "sha256": "bed15ada4083d0247ac7fd64cb99bbf473821dcb780145f8a56bf664a640f5b3"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_s2026_eval_step6000.json",
+      "size": 747,
+      "sha256": "ea8e8e94dc0b3a9f4ac59260032939ccabb681188f08b2d84f6aed1ccbc8ed90"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_dense_s2026_eval_step9000.json",
+      "size": 745,
+      "sha256": "692d2003c5c6145fbb68716fc72859d73853d80709cfbbb139b2c287dd6bc829"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_sparse_s2026.json",
+      "size": 8587,
+      "sha256": "3574150e696f0c4d5a784cdd7316cb164b35c0d830b5ebf032d5c0ec2eb24c16"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_sparse_s2026_curve.jsonl",
+      "size": 4034,
+      "sha256": "ad6ab9723b0002bf8befcef3e54586e45b28b2d22d4aa809cf3671987e9fe11b"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_sparse_s2026_eval_step12000.json",
+      "size": 741,
+      "sha256": "a81c85c66cf1549e04700a5a09ba1f62672553e2e6970a90474b336176e2417c"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_sparse_s2026_eval_step3000.json",
+      "size": 735,
+      "sha256": "10ef80053640f7bcceb051ae68bf89e7036ce2192e1a13fba9576cea3216a54b"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_sparse_s2026_eval_step6000.json",
+      "size": 747,
+      "sha256": "7292b9bd5ff12312c2a9a425bdc00a8398cb42f70c629eb7c46b7e9d77793aae"
+    },
+    {
+      "path": "results/raw/supervision_rope_safe_sparse_s2026_eval_step9000.json",
+      "size": 748,
+      "sha256": "6c71acbeb95868511d83c9735f40173e6a1238e549cb2da451236f9d7070f6d4"
+    },
+    {
+      "path": "src/__init__.py",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/common.py",
+      "size": 2473,
+      "sha256": "12f3564f7c71566beb4db284a5ee8c03b6e4d31f883da39196e39468227d60e9"
+    },
+    {
+      "path": "src/model.py",
+      "size": 4157,
+      "sha256": "22e278afce233ab2e845da52fa78535df60eed730b9efbc35e42ed21c35cf4bc"
+    },
+    {
+      "path": "src/quant.py",
+      "size": 1090,
+      "sha256": "9f28c548757873a1ecdaf809cc0b9395a4e42970c164505931df2a4d8eb39420"
+    },
+    {
+      "path": "src/ring_quant.py",
+      "size": 799,
+      "sha256": "b2a482e62bc0564850a0cec8d2f7d1c64d2b567744f1ce5f6e2209eed905f683"
+    },
+    {
+      "path": "src/spectral.py",
+      "size": 2914,
+      "sha256": "ddc78b7d43af3bcd6f23b151ca243d93d9ba2eeb10fcd13e7588e0d05c98a419"
+    },
+    {
+      "path": "src/synthetic.py",
+      "size": 2408,
+      "sha256": "b92e968c9b5b74f5430b01234021ff39883a33816e5e53c5b97ebd79ad41caaa"
+    },
+    {
+      "path": "src/vortex.py",
+      "size": 1905,
+      "sha256": "94917dbf3fbede37256e0217c245c44f01b6d549557fc4ff196fc2bb9041b61d"
+    }
+  ]
+}

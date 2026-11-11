@@ -1,0 +1,3 @@
+/root/autodl-tmp/vortex_followup/src/model.py:55: UserWarning: Expected query, key and value to all be of dtype: {Half, BFloat16}. Got Query dtype: float, Key dtype: float, and Value dtype: float instead. (Triggered internally at /data/gh/git/torch_musa/build/generated_cuda_compatible/include/ATen/native/transformers/sdp_utils_cpp.h:92.)
+  y = F.scaled_dot_product_attention(q, k, v, is_causal=True)
+Whole-model gradients at actual sequence lengths PASS

@@ -1,0 +1,1 @@
+Initial P1 was superseded: outlier Q differed across candidate distances, so that distribution did not form one valid attention row. Isotropic Q was shared and valid. Both distributions rerun with a shared-query invariant. Retained for provenance; excluded from final results. Its occupied time remains in GPU ledger.

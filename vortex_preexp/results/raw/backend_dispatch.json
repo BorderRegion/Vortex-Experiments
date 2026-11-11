@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "length": 256,
+      "dtype": "torch.bfloat16",
+      "output_device": "musa:0",
+      "backward_finite": true,
+      "dispatch_operators": [
+        "aten::scaled_dot_product_attention",
+        "aten::_scaled_dot_product_attention_flash_musa",
+        "musaGetDeviceCount",
+        "musaGetDeviceProperties_v2",
+        "musaLaunchKernel",
+        "musaStreamIsCapturing",
+        "musaMalloc",
+        "autograd::engine::evaluate_function: ScaledDotProductAttentionFlashMusaBackward0",
+        "ScaledDotProductAttentionFlashMusaBackward0",
+        "aten::_scaled_dot_product_attention_flash_musa_backward",
+        "musaDeviceSynchronize"
+      ]
+    },
+    {
+      "length": 2048,
+      "dtype": "torch.bfloat16",
+      "output_device": "musa:0",
+      "backward_finite": true,
+      "dispatch_operators": [
+        "aten::scaled_dot_product_attention",
+        "aten::_scaled_dot_product_attention_flash_musa",
+        "musaLaunchKernel",
+        "musaStreamIsCapturing",
+        "musaMalloc",
+        "autograd::engine::evaluate_function: ScaledDotProductAttentionFlashMusaBackward0",
+        "ScaledDotProductAttentionFlashMusaBackward0",
+        "aten::_scaled_dot_product_attention_flash_musa_backward",
+        "musaDeviceSynchronize"
+      ]
+    }
+  ],
+  "note": "CPU profiler records operator dispatch; MUSA output/gradient checked. Latency measured separately by MUSA Events."
+}

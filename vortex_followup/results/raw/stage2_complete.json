@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "schedule": "curriculum",
+  "rope_gate": {
+    "mean": 0.09244791666666667,
+    "minimum": 0.0546875,
+    "passed": false
+  },
+  "matched_comparisons_run": false
+}

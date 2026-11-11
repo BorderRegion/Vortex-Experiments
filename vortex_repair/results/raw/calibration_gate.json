@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mean": 1.0,
+  "minimum": 1.0,
+  "conditions": 6,
+  "purpose": "Proceed to matched Vortex/plain only when ordinary RoPE retrieval is usable."
+}

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "scope": "CPU evaluation pipeline smoke; RoPE checkpoint reinterpreted as arbitrary Vortex weights solely to test conversion and restore. NOT a trained Vortex result.",
+  "source": "train_rope_safe_s2026_step1221.pt",
+  "checkpoint_optimizer_restored": true,
+  "FP32_max_abs_logit_difference": 1.52587890625e-05,
+  "FP32_relative_l2": 2.480747127719951e-07,
+  "commutation": {
+    "head": true,
+    "ring7": true
+  },
+  "ptq_tail_accounting": [
+    {
+      "group": 128,
+      "tokens": 1025,
+      "nll": 5.555886518458222
+    },
+    {
+      "group": 16,
+      "tokens": 1025,
+      "nll": 5.559269362841619
+    },
+    {
+      "group": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        16
+      ],
+      "tokens": 1025,
+      "nll": 5.559688768907927
+    }
+  ],
+  "seconds": 1.846280574798584
+}

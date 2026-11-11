@@ -1,0 +1,25 @@
+{
+  "executed": false,
+  "decision": "skip",
+  "reason": "本轮未启动 P3：实际 attention 回放确认了部分 per-head 数值收益，不能说 P1 完全阴性；但局部任务的三种方法在 BF16/INT4 均为100%，未产生任务掉点收益，关联检索的 RoPE/Vortex/ring_plain 在共同307.2M-token预算后仍均未学会。按冻结的四层正对照校准，RoPE 在长度256/512、距离8/32/128的六条件平均仅7.2266%、最差5.0781%，远低于mean≥90%且min≥80%的启动门槛，关联检索 RQ2 无法判定。连续group16交换律又已失效。本轮选择保留部分数值信号，以 MODIFY 结束预实验，不在关键学习正对照未建立时扩大到文本模型；这不等于认定 Vortex 在 BF16 检索或文本上更差。远端数据预检的网络不可达只是已记录环境事实，不是此次跳过的决定依据。",
+  "evidence_files": [
+    "results/raw/p2_relative_rope_safe_s2026.json",
+    "results/raw/p2_relative_vortex_s2026.json",
+    "results/raw/p2_relative_ring_plain_s2026.json",
+    "results/raw/p2_associative_rope_safe_s2026.json",
+    "results/raw/p2_associative_vortex_s2026.json",
+    "results/raw/p2_associative_ring_plain_s2026.json",
+    "results/raw/p2b_associative_rope_safe_s2026.json",
+    "results/raw/p2b_associative_vortex_s2026.json",
+    "results/raw/p2b_associative_ring_plain_s2026.json",
+    "results/raw/p2c_associative_rope_safe_s2026.json",
+    "results/raw/p1_real_relative.json",
+    "results/raw/p1_real_associative.json",
+    "results/raw/p1_real_associative_extended.json",
+    "results/raw/p2c_gate.json",
+    "results/raw/attention_replay.json"
+  ],
+  "text_nll": null,
+  "text_perplexity": null,
+  "warning": "Synthetic-task NLL is not language-model validation NLL."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "Frozen after routing-only step6000 and before fresh routing+value training",
+  "evidence": "Routing-only step3000 CPU FP32: true target attention mass85.79%, ordinary accuracy6.25%, first-layer existing value readout1.63%, heldout ridge value decoding99.93%. Through6000 ordinary BF16 accuracy remains near random despite routing accuracy98%.",
+  "hypothesis": "Routing supervision alone leaves the existing decoder unable to read value identity. Preserve directly decodable value information during the same bootstrapping interval.",
+  "change": "In addition to unchanged two routing losses, existing norm+tied output reconstructs each explicit value token from block1 output, weight1 times the same auxiliary schedule. No inference changes or extra parameters.",
+  "fixed": "Fresh seed2026; same original data and61.44Mtokens/12000steps, optimizer and schedule as routing-only. All auxiliary weights reach0 at6000, final6000 updates answer-only.",
+  "comparison": "If ordinary RoPE inference succeeds, run Vortex/plain with identical routing+value protocol. Compare separately from original answer-only experiments. Preserve routing-only full results as ablation.",
+  "boundary": "Ridge decoding is diagnostic evidence of recoverability, not repaired task performance. Added loss reconstructs the token at its own location and is only active during training."
+}

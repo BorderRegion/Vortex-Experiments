@@ -1,0 +1,15 @@
+{
+  "cases": [
+    {
+      "group": "head",
+      "max_abs_logit_difference": 0.0,
+      "bitwise_equal": true
+    },
+    {
+      "group": "ring7",
+      "max_abs_logit_difference": 0.0,
+      "bitwise_equal": true
+    }
+  ],
+  "passed": true
+}

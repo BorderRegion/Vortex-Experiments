@@ -1,0 +1,11 @@
+{
+  "status": "Frozen after causal intervention and before routing-bootstrap training",
+  "causal_evidence": "Aligned checkpoint: forced correct second-layer V routing still gives 4.30%/5.86% accuracy at L256/512; both routing and value-to-answer readout need learning together.",
+  "change": "Train-only supervision of first-layer value->previous-key and second-layer final-query->matching-value attention, all four heads. Targets derived exclusively from input tokens.",
+  "architecture": "Unchanged two-layer ordinary causal decoder, original position operators. No oracle or extra operation at inference.",
+  "protocol": "Fresh initialization seed2026, original unchanged generator seed12026, batch16, original 256/256/256/512 schedule, 12000steps/61.44Mtokens. AdamW5e-4, betas0.9/0.95, wd0.1, clip1, warmup200 then cosine to10%.",
+  "auxiliary_schedule": "Weight1 for each routing loss through3000; cosine decay to0 at6000; steps6000-12000 answer-only. Same schedule for all methods.",
+  "verification": "Evaluate untouched ordinary inference on original six conditions throughout. Full length/distance evaluation, query swaps, PTQ and mapped spectral after training. Preserve original and follow-up trees.",
+  "comparison": "First establish RoPE learns; if it does, run Vortex and plain with identical data, objective, initialization seed, optimizer, tokens and schedule.",
+  "boundary": "Stronger supervision is a repair protocol, not evidence that the original answer-only training succeeded. Oracle intervention scores are never counted as valid task performance."
+}

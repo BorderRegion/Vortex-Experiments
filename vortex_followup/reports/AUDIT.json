@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "auxiliary_answer_oracle": true,
+    "identical_flat_training_inputs": true,
+    "identical_flat_token_budget": true,
+    "eight_times_supervised_answers": true,
+    "same_flat_model": true,
+    "original_source_copies_unchanged": true,
+    "model_only_quantizer_import_changed": true,
+    "ring_commutation_exact_int4_fp4": true,
+    "fp32_spectral_equivalence": true,
+    "checkpoint_for_every_run": true,
+    "within_cumulative_36h_budget": true,
+    "training_stages_finished": true,
+    "binding_stage_finished": true,
+    "alignment_stage_finished": true,
+    "actual_length_full_model_gradients": true,
+    "ring_group_whole_model_pre_post_equal": true,
+    "binding_uses_original_data": true
+  },
+  "incremental_gpu_seconds": 2116.4835505485535,
+  "cumulative_gpu_seconds": 9431.38007736206,
+  "runs": [
+    "supervision_rope_safe_dense_curriculum_s2026",
+    "supervision_rope_safe_dense_s2026",
+    "supervision_rope_safe_sparse_s2026",
+    "binding_rope_safe_aligned_s2026",
+    "binding_rope_safe_s2026"
+  ],
+  "original_results_untouched": true
+}

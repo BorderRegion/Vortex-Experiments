@@ -1,0 +1,8 @@
+download train-00000-of-00002.parquet
+download train-00001-of-00002.parquet
+download validation-00000-of-00001.parquet
+fit tokenizer on train split only
+encode train
+train {'tokens': 122021705, 'dtype': '<u2', 'sha256': 'b54d45ba1d5541ca02b95c03f177f654d3c9d60ce91a4ccdc4e08f546ab5b306', 'articles': 29444}
+encode validation
+validation {'tokens': 255096, 'dtype': '<u2', 'sha256': 'cf267d0ca019146a23162954a0f31cce531d38d749bb03102814d2228395779f', 'articles': 60}

@@ -1,0 +1,6 @@
+# Runtime already provided by MUSA image; do not replace driver/SDK/PyTorch.
+# /usr/bin/python 3.10.12
+# torch==2.11.0.post1
+# torch_musa==2.11.0.post1+b431668
+numpy==1.25.0
+matplotlib==3.10.9
